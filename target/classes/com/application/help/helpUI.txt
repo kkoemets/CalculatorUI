@@ -1,0 +1,6 @@
+Commands:
+calc <equation> 
+
+comment <text>
+
+calcf <equation>
