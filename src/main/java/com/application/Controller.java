@@ -13,6 +13,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.text.TextAlignment;
 
+import javax.rmi.CORBA.Util;
+
 public class Controller {
 
     private Calculator calculator = new Calculator();
@@ -58,8 +60,6 @@ public class Controller {
         initializeTemplatesBtn();
         initializeTemplateMenu();
         initializeMenuBar();
-
-
     }
 
 
@@ -86,6 +86,7 @@ public class Controller {
         });
         helpMenu.getItems().add(commands);
     }
+
 
     private void initializeTemplateMenu() {
         templateMenu.setTextAlignment(TextAlignment.CENTER);
@@ -129,33 +130,33 @@ public class Controller {
     private void initializeOutputAre() {
     }
 
+
     private void initializeParseBtn() {
         parseBtn.setOnAction(event -> {
             StringBuilder sb = new StringBuilder();
             for (String str : inputArea.getText().split("\\n")) {
+                Utils.clean(str);
                 if (str.equals("")) {
                     sb.append("\n");
-                } else if (str.indexOf(" ") == -1) {
-                    sb.append("Unknown command on this line\n");
-                } else if (str.substring(0, str.indexOf(" ")).equals("calc")) {
-                    sb.append(calculator.calculateEquation(Utils.clean(str.substring(str.indexOf(' ') + 1, str.length())))+ "\n");
-                } else if (str.substring(0, str.indexOf(" ")).equals("comment")) {
-                    sb.append(str.substring("comment ".length()) + "\n");
-                } else if (str.substring(0, str.indexOf(" ")).equals("set")) {
-                    str = str.substring(str.indexOf(' '), str.length());
+                } else if (str.substring(0, str.indexOf(":")).equals("calc")) {
+                    sb.append(calculator.calculateEquation(str.substring(str.indexOf(":") + 1, str.length()))+ "\n");
+                } else if (str.substring(0, str.indexOf(":")).equals("comment")) {
+                    sb.append(str.substring("comment:".length() + 1) + "\n");
+                } else if (str.substring(0, str.indexOf(":")).equals("set")) {
+                    str = str.substring(str.indexOf(":") + 1, str.length());
                     str = Utils.clean(str);
                     sb.append(converter.setVar(str) + "\n");
-                } else if ((str.substring(0, str.indexOf(" ")).equals("calcf") && str.contains("="))) {
+                } else if ((str.substring(0, str.indexOf(":")).equals("calcf") && str.contains("="))) {
                     try {
-                        String strDef = str.substring(str.indexOf(' ') + 1,str.indexOf('=') + 1);
+                        String strDef = str.substring(str.indexOf(":") + 1,str.indexOf('=') + 1);
                         str = converter.convertString(Utils.clean(str.substring(str.indexOf('=') + 1, str.length())));
                         sb.append(converter.setVar(strDef + calculator.calculateEquation(str)+ "\n"));
                     } catch (Exception e) {
                         sb.append(e.getMessage() + "\n");
                         e.printStackTrace();
                     }
-                } else if(str.substring(0, str.indexOf(" ")).equals("getVars")) {
-                    // method in converter
+                } else if (str.substring(0, str.indexOf(":")).equals("getVars")) {
+                    sb.append("Saved variables:\n" + converter.getVars());
                 } else {
                     sb.append("Unknown command on this line\n");
                 }

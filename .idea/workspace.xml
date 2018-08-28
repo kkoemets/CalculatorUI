@@ -6,7 +6,88 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f38bbdf-6906-4378-9a90-579f9339245e" name="Default" comment="" />
+    <list default="true" id="2f38bbdf-6906-4378-9a90-579f9339245e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/fmath_mathml_java.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jdom_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/GenerateImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/asana/Asana-Math.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/asana/descriptor.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVu LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSans-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSans-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSans-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSans-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSans.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSansMono-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSansMono-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSansMono-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSansMono.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSerif-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSerif-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSerif-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSerif.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/descriptor.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/diwanltr/Diwanltr.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/diwanltr/descriptor.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/fonts.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/sazanami/descriptor.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/sazanami/sazanami-gothic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/script/ITCEDSCR.TTF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/script/descriptor.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIX Font License 2010.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXDoubleStruck-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXDoubleStruck-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXDoubleStruck-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXDoubleStruck.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXFraktur-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXFraktur.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Bold-Unicode.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-BoldItalic-Unicode.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-BoldItalic-Unicode.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Italic-Unicode.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Regular-Unicode.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneralUnicode-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneralUnicode-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneralUnicode-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXMonospace.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXSansSerif-Bold-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXSansSerif-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXSansSerif-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXSansSerif-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXSansSerif.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXScript-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXScript.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/descriptor.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/trado/descriptor.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/trado/trado.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/glyphs/glyph1.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/glyphs/glyph1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/glyphs/glyph1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/glyphs/glyph1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/glyphs/transp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/images/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/mathml/test.mathml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/library/fmath-mathml-java.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/library/jdom-2.0.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/converter/variablebase/VariableBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/converter/variablebase/VariableBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/templates/Lihttala paindemoment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/templates/Lihttala paindemoment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/templates/template3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/templates/Test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/application/api/converter/ConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/application/api/converter/ConverterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/converter/Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/converter/Converter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/converter/variablebase/VariableBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/converter/variablebase/VariableBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/templates/Lihttala paindemoment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/templates/Lihttala paindemoment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/templates/template3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/application/api/converter/ConverterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/application/api/converter/ConverterTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +101,8 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="157" column="42" selection-start-line="157" selection-start-column="42" selection-end-line="157" selection-end-column="42" />
+            <state relative-caret-position="71">
+              <caret line="141" column="108" selection-start-line="141" selection-start-column="108" selection-end-line="141" selection-end-column="108" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,9 +110,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helpUI.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/help/helpUI.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="ConverterTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/application/api/converter/ConverterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#290#291#0" expanded="true" />
+                <element signature="e#1121#1122#0" expanded="true" />
+                <element signature="e#1201#1202#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenerateImage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/GenerateImage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="CalculatorTest.java" pinned="false" current-in-tab="false">
@@ -49,20 +150,8 @@
       <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/calculator/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-915">
+            <state relative-caret-position="-1119">
               <caret line="89" column="193" selection-start-line="89" selection-start-column="193" selection-end-line="89" selection-end-column="193" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Converter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,6 +168,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -101,9 +193,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/convertor/Convertor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/convertor/Converter.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/application/api/convertor/ConverterTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/application/api/converter/variablebase/VariableBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/common/OperatorHandler.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/application/api/converter/ConverterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/file/File.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/file/Template.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/templates/TemplateController.java" />
@@ -111,12 +201,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/application/CalculatorUI.fxml" />
         <option value="$PROJECT_DIR$/src/test/java/com/application/api/common/UtilsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/application/api/common/OperatorHandlerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/application/templates/Lihttala paindemoment.txt" />
         <option value="$PROJECT_DIR$/src/test/java/com/application/api/calculator/utilities/ParenthesesHandlerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/calculator/Calculator.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/application/api/calculator/CalculatorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/api/converter/variablebase/VariableBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/templates/Lihttala paindemoment.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/templates/Test.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/Controller.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/application/api/converter/ConverterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/GenerateImage.java" />
       </list>
     </option>
   </component>
@@ -126,6 +220,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -137,6 +232,24 @@
             <path>
               <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="CalculatorUI_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
@@ -172,6 +285,82 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+              <item name="variablebase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="mathml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
@@ -220,6 +409,17 @@
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -235,7 +435,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/library/jdom-2.0.6.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4237443" />
@@ -245,6 +445,9 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.application.api.convertor" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.application.api.common" />
       <recent name="com.application.api" />
@@ -252,10 +455,14 @@
       <recent name="com.application" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\api\mathml\fmath\example\images" />
+      <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\api\mathml\fmath\example\mathml" />
+      <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\api\mathml\fmath\example" />
+      <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\api\mathml\fmath\library" />
       <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\resources" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.application.api.mathml.fmath.example" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\templates" />
@@ -277,9 +484,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.All in CalculatorUI">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="GenerateImage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.application.api.mathml.fmath.example.GenerateImage" />
+      <module name="CalculatorUI" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.application.api.mathml.fmath.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.application.Main" />
@@ -312,19 +530,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="CalculatorTest.calculateEquation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConverterTest.getVars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CalculatorUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.application.api.calculator.*" />
+          <option name="PATTERN" value="com.application.api.converter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.application.api.calculator" />
-      <option name="MAIN_CLASS_NAME" value="com.application.api.calculator.CalculatorTest" />
-      <option name="METHOD_NAME" value="calculateEquation" />
+      <option name="PACKAGE_NAME" value="com.application.api.converter" />
+      <option name="MAIN_CLASS_NAME" value="com.application.api.converter.ConverterTest" />
+      <option name="METHOD_NAME" value="getVars" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -335,42 +553,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="CalculatorTest.calculateEquation_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConverterTest.getVars_empty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CalculatorUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.application.api.calculator.*" />
+          <option name="PATTERN" value="com.application.api.converter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.application.api.calculator" />
-      <option name="MAIN_CLASS_NAME" value="com.application.api.calculator.CalculatorTest" />
-      <option name="METHOD_NAME" value="calculateEquation_test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="CalculatorTest.calculatePlusMinus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CalculatorUI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.application.api.calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.application.api.calculator" />
-      <option name="MAIN_CLASS_NAME" value="com.application.api.calculator.CalculatorTest" />
-      <option name="METHOD_NAME" value="calculatePlusMinus" />
+      <option name="PACKAGE_NAME" value="com.application.api.converter" />
+      <option name="MAIN_CLASS_NAME" value="com.application.api.converter.ConverterTest" />
+      <option name="METHOD_NAME" value="getVars_empty" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -434,18 +629,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.All in CalculatorUI" />
-      <item itemvalue="JUnit.CalculatorTest.calculateEquation" />
-      <item itemvalue="JUnit.CalculatorTest.calculateEquation_test" />
-      <item itemvalue="JUnit.CalculatorTest.calculatePlusMinus" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.ConverterTest.getVars" />
+      <item itemvalue="JUnit.ConverterTest.getVars_empty" />
+      <item itemvalue="Application.GenerateImage" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.All in CalculatorUI" />
-        <item itemvalue="JUnit.CalculatorTest.calculatePlusMinus" />
-        <item itemvalue="JUnit.CalculatorTest.calculateEquation" />
-        <item itemvalue="JUnit.CalculatorTest.calculateEquation_test" />
+        <item itemvalue="Application.GenerateImage" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ConverterTest.getVars_empty" />
+        <item itemvalue="JUnit.ConverterTest.getVars" />
       </list>
     </recent_temporary>
   </component>
@@ -463,34 +658,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CalculatorTest_calculateEquation_test - 2018.08.28 at 01h 36m 13s.xml">
-      <configuration name="CalculatorTest.calculateEquation_test" configurationId="JUnit" />
+    <history-entry file="ConverterTest_getVars - 2018.08.28 at 18h 19m 47s.xml">
+      <configuration name="ConverterTest.getVars" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculatorTest_calculateEquation_test - 2018.08.28 at 01h 36m 21s.xml">
-      <configuration name="CalculatorTest.calculateEquation_test" configurationId="JUnit" />
+    <history-entry file="ConverterTest_getVars - 2018.08.28 at 18h 21m 34s.xml">
+      <configuration name="ConverterTest.getVars" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculatorTest_calculateEquation_test - 2018.08.28 at 01h 36m 26s.xml">
-      <configuration name="CalculatorTest.calculateEquation_test" configurationId="JUnit" />
+    <history-entry file="ConverterTest_getVars - 2018.08.28 at 18h 24m 23s.xml">
+      <configuration name="ConverterTest.getVars" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_CalculatorUI - 2018.08.28 at 01h 37m 06s.xml">
+    <history-entry file="ConverterTest_getVars - 2018.08.28 at 18h 25m 25s.xml">
+      <configuration name="ConverterTest.getVars" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConverterTest_getVars - 2018.08.28 at 18h 25m 29s.xml">
+      <configuration name="ConverterTest.getVars" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CalculatorUI - 2018.08.28 at 18h 25m 41s.xml">
       <configuration name="All in CalculatorUI" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculatorTest_calculateEquation - 2018.08.28 at 01h 38m 10s.xml">
-      <configuration name="CalculatorTest.calculateEquation" configurationId="JUnit" />
+    <history-entry file="ConverterTest_getVars_empty - 2018.08.28 at 18h 28m 35s.xml">
+      <configuration name="ConverterTest.getVars_empty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculatorTest_calculateEquation - 2018.08.28 at 01h 39m 47s.xml">
-      <configuration name="CalculatorTest.calculateEquation" configurationId="JUnit" />
+    <history-entry file="ConverterTest_getVars_empty - 2018.08.28 at 18h 28m 53s.xml">
+      <configuration name="ConverterTest.getVars_empty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculatorTest_calculateEquation - 2018.08.28 at 01h 41m 15s.xml">
-      <configuration name="CalculatorTest.calculateEquation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CalculatorUI - 2018.08.28 at 01h 41m 19s.xml">
+    <history-entry file="All_in_CalculatorUI - 2018.08.28 at 18h 37m 34s.xml">
       <configuration name="All in CalculatorUI" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculatorTest_calculatePlusMinus - 2018.08.28 at 01h 43m 17s.xml">
-      <configuration name="CalculatorTest.calculatePlusMinus" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CalculatorUI - 2018.08.28 at 01h 43m 48s.xml">
+    <history-entry file="All_in_CalculatorUI - 2018.08.28 at 18h 43m 25s.xml">
       <configuration name="All in CalculatorUI" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -506,7 +701,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33156216" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -538,7 +733,7 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -566,8 +761,10 @@
           <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -600,6 +797,8 @@
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3004#3005#0" expanded="true" />
+            <element signature="e#3052#3053#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -733,34 +932,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/variablebase/VariableBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/common/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/application/api/converter/ConverterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,13 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/templates/Lihttala paindemoment.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/application/api/calculator/utilities/ParenthesesHandlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -857,16 +1025,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/math/BigDecimal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3610">
@@ -880,6 +1038,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/help/helpUI.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/application/api/calculator/CalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -890,9 +1051,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/variablebase/VariableBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3004#3005#0" expanded="true" />
+            <element signature="e#3052#3053#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/calculator/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-915">
+        <state relative-caret-position="-1119">
           <caret line="89" column="193" selection-start-line="89" selection-start-column="193" selection-end-line="89" selection-end-column="193" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -900,18 +1083,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/templates/Lihttala paindemoment.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="157" column="42" selection-start-line="157" selection-start-column="42" selection-end-line="157" selection-end-column="42" />
+        <state relative-caret-position="71">
+          <caret line="141" column="108" selection-start-line="141" selection-start-column="108" selection-end-line="141" selection-end-column="108" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/help/helpUI.txt">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/application/api/converter/ConverterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/mathml/test.mathml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/images/test.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/templates/Test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/GenerateImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
@@ -932,7 +1153,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -992,7 +1213,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: org.junit.jupiter:junit-jupiter-api:5.3.0-RC1</last-edited>
+          <last-edited>jdom-2.0.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

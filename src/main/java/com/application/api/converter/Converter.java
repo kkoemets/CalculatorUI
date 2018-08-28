@@ -6,7 +6,6 @@ import com.application.api.converter.variablebase.VariableBase;
 
 import java.util.Collections;
 import java.util.HashSet;
-import java.util.IllegalFormatConversionException;
 import java.util.Set;
 
 public class Converter {
@@ -73,5 +72,9 @@ public class Converter {
         }
         addVariable(string.substring(0, index), string.substring(index + 1, string.length()));
         return string.substring(0, index) + " = " + string.substring(index + 1, string.length());
+    }
+
+    public String getVars() {
+        return varBase.getVariableBaseListed();
     }
 }

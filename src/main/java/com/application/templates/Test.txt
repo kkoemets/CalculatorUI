@@ -1,0 +1,6 @@
+comment: for testing code
+set: L = 10
+set: p_d = 5
+calcf: M=p_d*L^2/8
+getVars:
+calcf: S=M*L

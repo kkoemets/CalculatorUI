@@ -1,6 +1,6 @@
-comment L - tala sille, m
-set L = 10
-comment p - lauskoormus, kN/m2
-set p_d = 5
-comment painemoment tala keskel M = p_d*L^2/8
-calcf M=p_d*L^2/8
+comment: L - tala sille, m
+set: L = 10
+comment: p - lauskoormus, kN/m2
+set: p_d = 5
+comment: painemoment tala keskel M = p_d*L^2/8
+calcf: M=p_d*L^2/8

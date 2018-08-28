@@ -32,6 +32,22 @@ public class VariableBase {
         return this + "Does not contain variable " + variable;
     }
 
+    public boolean isEmpty() {
+        return variableBase.isEmpty();
+    }
+
+    public String getVariableBaseListed() {
+        StringBuilder sb = new StringBuilder();
+        if (!isEmpty()) {
+            for (String key : variableBase.keySet()) {
+                sb.append(key + "=" +variableBase.get(key)+"\n");
+            }
+            sb.replace(sb.lastIndexOf("\n"),sb.length(),"");
+            return sb.toString();
+        }
+        return "No variables have been set!";
+    }
+
     public boolean contains(String string) {
         return variableBase.containsKey(string);
     }
