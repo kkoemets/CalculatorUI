@@ -1,7 +1,6 @@
-package com.application.api.converter.variablebase;
+package com.application.api.converter;
 
-
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -14,11 +13,16 @@ public class VariableBase {
     private Map<String, String> variableBase;
 
     public VariableBase() {
-        variableBase = new HashMap<>();
+        variableBase = new LinkedHashMap<>();
     }
 
 
     public void add(String variable, String value) {
+        try {
+            Double.parseDouble(value);
+        } catch (NumberFormatException e) {
+            throw new NumberFormatException();
+        }
         variableBase.put(variable, value);
     }
 
@@ -45,7 +49,7 @@ public class VariableBase {
         StringBuilder sb = new StringBuilder();
         if (!isEmpty()) {
             for (String key : variableBase.keySet()) {
-                sb.append(key + "=" +variableBase.get(key)+"\n");
+                sb.append("    " + key + "=" +variableBase.get(key)+"\n");
             }
             sb.replace(sb.lastIndexOf("\n"),sb.length(),"");
             return sb.toString();
@@ -58,4 +62,7 @@ public class VariableBase {
         return variableBase.containsKey(string);
     }
 
+    public Map<String, String> getVariableBase() {
+        return variableBase;
+    }
 }

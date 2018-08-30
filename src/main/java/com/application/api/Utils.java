@@ -1,4 +1,4 @@
-package com.application.api.common;
+package com.application.api;
 
 public class Utils {
 

@@ -2,18 +2,19 @@ package com.application;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
 import com.application.api.calculator.Calculator;
-import com.application.api.common.Utils;
+import com.application.api.Utils;
 import com.application.api.converter.Converter;
+import com.application.api.converter.VariableBase;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.text.TextAlignment;
-
-import javax.rmi.CORBA.Util;
+import org.apache.poi.ss.formula.FormulaParseException;
 
 public class Controller {
 
@@ -57,7 +58,6 @@ public class Controller {
     void initialize() {
         inputArea.setPromptText("Type your command here...");
         initializeParseBtn();
-        initializeTemplatesBtn();
         initializeTemplateMenu();
         initializeMenuBar();
     }
@@ -121,47 +121,51 @@ public class Controller {
         }
     }
 
-    private void initializeTemplatesBtn() {
-
-    }
-
-
-
-    private void initializeOutputAre() {
-    }
-
 
     private void initializeParseBtn() {
         parseBtn.setOnAction(event -> {
+            VariableBase variableBase = new VariableBase();
             StringBuilder sb = new StringBuilder();
-            for (String str : inputArea.getText().split("\\n")) {
-                Utils.clean(str);
-                if (str.equals("")) {
-                    sb.append("\n");
-                } else if (str.substring(0, str.indexOf(":")).equals("calc")) {
-                    sb.append(calculator.calculateEquation(str.substring(str.indexOf(":") + 1, str.length()))+ "\n");
-                } else if (str.substring(0, str.indexOf(":")).equals("comment")) {
-                    sb.append(str.substring("comment:".length() + 1) + "\n");
-                } else if (str.substring(0, str.indexOf(":")).equals("set")) {
-                    str = str.substring(str.indexOf(":") + 1, str.length());
-                    str = Utils.clean(str);
-                    sb.append(converter.setVar(str) + "\n");
-                } else if ((str.substring(0, str.indexOf(":")).equals("calcf") && str.contains("="))) {
+            int lineCounter = 0;
+            try {
+                for (String str : inputArea.getText().split("\\n")) {
+                    lineCounter++;
+                    Utils.clean(str);
                     try {
-                        String strDef = str.substring(str.indexOf(":") + 1,str.indexOf('=') + 1);
-                        str = converter.convertString(Utils.clean(str.substring(str.indexOf('=') + 1, str.length())));
-                        sb.append(converter.setVar(strDef + calculator.calculateEquation(str)+ "\n"));
-                    } catch (Exception e) {
-                        sb.append(e.getMessage() + "\n");
-                        e.printStackTrace();
+                        if (str.equals("")) {
+                            sb.append("\n");
+                        } else if (str.substring(0, str.indexOf(":")).equals("calc")) {
+                            sb.append(calculator.calculate(str.substring(str.indexOf(":") + 1, str.length())) + "\n");
+                        } else if (str.substring(0, str.indexOf(":")).equals("comment")) {
+                            sb.append(str.substring("comment:".length() + 1) + "\n");
+                        } else if (str.substring(0, str.indexOf(":")).equals("set")) {
+                            str = str.substring(str.indexOf(":") + 1, str.length());
+                            str = Utils.clean(str);
+                            sb.append(converter.setVar(str) + "\n");
+                        } else if ((str.substring(0, 5).equals("calcf") && str.contains("="))) {
+                            String stringForSettingDecimalPlace = str.substring(0, str.indexOf(':'));
+                            calculator.setDecimalPlace(Integer.parseInt(stringForSettingDecimalPlace.substring(stringForSettingDecimalPlace.indexOf('(') + 1, stringForSettingDecimalPlace.indexOf(')'))));
+                            String varName = str.substring(str.indexOf(":") + 1, str.indexOf('=') + 1);
+                            str = converter.convertString(Utils.clean(str.substring(str.indexOf('=') + 1, str.length())));
+                            sb.append(converter.setVar(varName + calculator.calculate(str)) + "\n");
+                        } else if (str.substring(0, str.indexOf(":")).equals("getVars")) {
+                            sb.append("List of saved variables:\n" + converter.getVars() + "\n");
+                        } else {
+                            sb.append("Unknown command on line: " + lineCounter + "\n");
+                        }
+                    } catch (StringIndexOutOfBoundsException e) {
+                        sb.append("Unknown command on line: " + lineCounter + "\n");
                     }
-                } else if (str.substring(0, str.indexOf(":")).equals("getVars")) {
-                    sb.append("Saved variables:\n" + converter.getVars());
-                } else {
-                    sb.append("Unknown command on this line\n");
                 }
+                outputArea.setText(sb.toString());
+            } catch (IOException e) {
+                System.out.println("Looks like there was a problem a problem creating/reading the Excel file. Check the directory\n");
+                outputArea.setText("ERROR 01");
+            } catch (FormulaParseException e) {
+                outputArea.setText("Incorrect formula on line :" + lineCounter + "\n Check for syntax mistakes!");
+            } catch (NumberFormatException e) {
+                outputArea.setText("Incorrent variable declaration on line: "+ lineCounter);
             }
-            outputArea.setText(sb.toString());
         });
     }
 }

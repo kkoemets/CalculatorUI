@@ -1,7 +1,7 @@
 package com.application.api.mathml.parser;
 
 import com.application.api.common.OperatorHandler;
-import com.application.api.common.Utils;
+import com.application.api.Utils;
 import com.application.api.mathml.imagegenerator.ImageGenerator;
 
 import java.io.IOException;
@@ -18,8 +18,8 @@ class Run {
 //        System.out.println(parsedDiv);
         parsed = parser.parse("(a+b)/(c*d)*(c*d)+1+(a+b)/(c*d)");
         System.out.println(parsed);
-//        parser.createImage("<mfrac><mn>1</mn><mn>1</mn></mfrac>");
-        parser.createImage(parsed);
+        parser.createImage("<mfrac><mn>1</mn><mn>1</mn></mfrac>");
+//        parser.createImage(parsed);
 //        parser.createImage("<mfrac><mn>(a+b)</mn><mn>(c*d)</mn></<mfrac><mn><mfrac></mn><mn>(c</mn></mfrac>*d)+1+<mfrac><mn>(a+b)</mn><mn>(c*d)</mn></mfrac>");
     }
 }
