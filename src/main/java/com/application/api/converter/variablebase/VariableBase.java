@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * Meant for storing variables with values in a HashMap
  * Key - string representation of variable name
- * Value - string representation of the variable value
+ * Value - string representation of the variables value
  */
 public class VariableBase {
 
@@ -17,13 +17,16 @@ public class VariableBase {
         variableBase = new HashMap<>();
     }
 
+
     public void add(String variable, String value) {
         variableBase.put(variable, value);
     }
 
+
     public void deleteAll() {
         variableBase.clear();
     }
+
 
     public String getValue(String variable) {
         if (variableBase.containsKey(variable)) {
@@ -32,9 +35,11 @@ public class VariableBase {
         return this + "Does not contain variable " + variable;
     }
 
+
     public boolean isEmpty() {
         return variableBase.isEmpty();
     }
+
 
     public String getVariableBaseListed() {
         StringBuilder sb = new StringBuilder();
@@ -47,6 +52,7 @@ public class VariableBase {
         }
         return "No variables have been set!";
     }
+
 
     public boolean contains(String string) {
         return variableBase.containsKey(string);

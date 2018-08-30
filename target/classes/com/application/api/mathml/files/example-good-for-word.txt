@@ -1,4 +1,6 @@
-﻿<math mode="display" xmlns="http://www.w3.org/1998/Math/MathML">
+﻿http://www.mathmlcentral.com/Tools/ToMathML.jsp
+
+<math mode="display" xmlns="http://www.w3.org/1998/Math/MathML">
  <semantics>
   <mrow>
     <mi>x</mi>
@@ -30,3 +32,49 @@
   </mrow>
  </semantics>
 </math>
+
+(1+1)+1
+<math mode="display" xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mn>1</mn>
+     <mo>+</mo>
+     <mn>1</mn>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <mo>+</mo>
+   <mn>1</mn>
+  </mrow>
+ </semantics>
+</math>
+
+1/2
+<math mode="display" xmlns="http://www.w3.org/1998/Math/MathML"><semantics></semantics></math>
+
+(a+b)/(a-b)
+<math mode="display" xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+ <mfrac>
+  <mrow>
+   <mi>a</mi>
+   <mo>+</mo>
+   <mi>b</mi>
+  </mrow>
+  <mrow>
+   <mi>a</mi>
+   <mo>-</mo>
+   <mi>b</mi>
+  </mrow>
+ </mfrac>
+  </semantics>
+</math>
+same and works
+<math mode="display" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow></mfrac></semantics></math>
+
+
+
+
