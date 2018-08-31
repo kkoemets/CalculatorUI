@@ -58,18 +58,16 @@
 (a+b)/(a-b)
 <math mode="display" xmlns="http://www.w3.org/1998/Math/MathML">
  <semantics>
- <mfrac>
-  <mrow>
-   <mi>a</mi>
-   <mo>+</mo>
-   <mi>b</mi>
-  </mrow>
-  <mrow>
-   <mi>a</mi>
-   <mo>-</mo>
-   <mi>b</mi>
-  </mrow>
- </mfrac>
+ <mrow>
+  <mi>cos</mi>
+  <mo>&#8289;</mo>
+  <mo>(</mo>
+  <msup>
+   <mi>x</mi>
+   <mn>3</mn>
+  </msup>
+  <mo>)</mo>
+ </mrow>
   </semantics>
 </math>
 same and works

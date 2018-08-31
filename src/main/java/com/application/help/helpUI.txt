@@ -1,6 +1,13 @@
-Commands:
-calc <equation> 
+Commands
+---------------------
 
-comment <text>
+calc: <equation>
 
-calcf <equation>
+comment: <text>
+
+calcf(n): <variable name>=<equation>, <unit>
+              n is decimal precision
+
+getVars:
+
+set: <variable name>=<variable value>

@@ -3,8 +3,6 @@ package com.application;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 import java.util.Scanner;
 
 import com.application.api.calculator.Calculator;
@@ -19,22 +17,6 @@ import org.apache.poi.ss.formula.FormulaParseException;
 public class Controller {
 
     private Calculator calculator = new Calculator();
-    private Converter converter = new Converter();
-
-    @FXML
-    private ResourceBundle resources;
-
-    @FXML
-    private URL location;
-
-    @FXML
-    private Button saveFormulaBtn;
-
-    @FXML
-    private Button loadFormulaBtn;
-
-    @FXML
-    private Button templatesBtn;
 
     @FXML
     private MenuButton templateMenu;
@@ -45,27 +27,16 @@ public class Controller {
     @FXML
     private TextArea inputArea;
 
-    @FXML
-    private Button parseBtn;
 
-    @FXML
-    private MenuBar menuBar;
-
-    @FXML
-    private Menu helpMenu;
 
     @FXML
     void initialize() {
-        inputArea.setPromptText("Type your command here...");
-        initializeParseBtn();
         initializeTemplateMenu();
-        initializeMenuBar();
+        initializeInstructionsTextAndAlert();
     }
 
-
-    private void initializeMenuBar() {
-        // helpMenu
-        MenuItem commands = new MenuItem("How-to");
+    private Alert alert;
+    void initializeInstructionsTextAndAlert() {
         File template = new File("src/main/java/com/application/help/helpUI.txt");
         StringBuilder collect = new StringBuilder();
         try {
@@ -77,14 +48,16 @@ public class Controller {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        commands.setOnAction(event -> {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("How-to");
-            alert.setHeaderText("Below are commands for creating calculations");
-            alert.setContentText(collect.toString());
-            alert.showAndWait();
-        });
-        helpMenu.getItems().add(commands);
+        alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Instructions");
+        alert.setHeaderText("Below are commands for creating calculations");
+        alert.setContentText(collect.toString());
+    }
+
+
+    @FXML
+    private void showInstructions() {
+        alert.showAndWait();
     }
 
 
@@ -102,7 +75,6 @@ public class Controller {
             final String templateName = f + ".txt"; // setOnAction requires final variables
             // creating action when menu item is pressed
             // main objective is to copy text from template file to input area
-
             menuItem.setOnAction(event -> {
                 File template = new File("src/main/java/com/application/templates/"+ templateName);
                 try {
@@ -121,52 +93,61 @@ public class Controller {
         }
     }
 
-
-    private void initializeParseBtn() {
-        parseBtn.setOnAction(event -> {
-            VariableBase variableBase = new VariableBase();
-            StringBuilder sb = new StringBuilder();
-            int lineCounter = 0;
-            try {
-                for (String str : inputArea.getText().split("\\n")) {
-                    lineCounter++;
-                    Utils.clean(str);
-                    try {
-                        if (str.equals("")) {
-                            sb.append("\n");
-                        } else if (str.substring(0, str.indexOf(":")).equals("calc")) {
-                            sb.append(calculator.calculate(str.substring(str.indexOf(":") + 1, str.length())) + "\n");
-                        } else if (str.substring(0, str.indexOf(":")).equals("comment")) {
-                            sb.append(str.substring("comment:".length() + 1) + "\n");
-                        } else if (str.substring(0, str.indexOf(":")).equals("set")) {
-                            str = str.substring(str.indexOf(":") + 1, str.length());
-                            str = Utils.clean(str);
-                            sb.append(converter.setVar(str) + "\n");
-                        } else if ((str.substring(0, 5).equals("calcf") && str.contains("="))) {
-                            String stringForSettingDecimalPlace = str.substring(0, str.indexOf(':'));
-                            calculator.setDecimalPlace(Integer.parseInt(stringForSettingDecimalPlace.substring(stringForSettingDecimalPlace.indexOf('(') + 1, stringForSettingDecimalPlace.indexOf(')'))));
-                            String varName = str.substring(str.indexOf(":") + 1, str.indexOf('=') + 1);
-                            str = converter.convertString(Utils.clean(str.substring(str.indexOf('=') + 1, str.length())));
-                            sb.append(converter.setVar(varName + calculator.calculate(str)) + "\n");
-                        } else if (str.substring(0, str.indexOf(":")).equals("getVars")) {
-                            sb.append("List of saved variables:\n" + converter.getVars() + "\n");
-                        } else {
-                            sb.append("Unknown command on line: " + lineCounter + "\n");
-                        }
-                    } catch (StringIndexOutOfBoundsException e) {
+    @FXML
+    private void parse() {
+        Converter converter = new Converter();
+        VariableBase variableBase = new VariableBase();
+        StringBuilder sb = new StringBuilder();
+        int lineCounter = 0;
+        try {
+            for (String str : inputArea.getText().split("\\n")) {
+                lineCounter++;
+                Utils.clean(str);
+                try {
+                    if (str.equals("")) {
+                        sb.append("\n");
+                    } else if (str.substring(0, str.indexOf(":")).equals("calc")) {
+                        sb.append(calculator.calculate(str.substring(str.indexOf(":") + 1, str.length())) + "\n");
+                    } else if (str.substring(0, str.indexOf(":")).equals("comment")) {
+                        sb.append(str.substring("comment:".length() + 1) + "\n");
+                    } else if (str.substring(0, str.indexOf(":")).equals("set")) {
+                        str = Utils.clean(str);
+                        String varName = str.substring(str.indexOf(":") + 1, str.indexOf('='));
+                        str = Utils.clean(str.substring(str.indexOf('=') + 1, str.length()));
+                        converter.setVar(varName + "=" + str);
+                        sb.append(varName + '=' + converter.getVarBase().get(Utils.clean(varName)) + "\n");
+                    } else if ((str.substring(0, 5).equals("calcf") && str.contains("="))) {
+                        // setting decimal place from calcf(x): <-- where x is the parameter
+                        String stringForSettingDecimalPlace = str.substring(0, str.indexOf(':'));
+                        calculator.setDecimalPlace(Integer.parseInt(stringForSettingDecimalPlace.substring(stringForSettingDecimalPlace.indexOf('(') + 1, stringForSettingDecimalPlace.indexOf(')'))));
+                        // getting varname, which is after : and before =
+                        String varName = str.substring(str.indexOf(":") + 1, str.indexOf('='));
+                        // saving formula to string (not converted)
+                        String unParsedFormula = Utils.clean(str.substring(str.indexOf('=') + 1, str.length()));
+                        // saving formula
+                        str = converter.convertString(unParsedFormula);
+                        // calculating formula and saving to varbase
+                        converter.setVar(varName + "=" + calculator.calculate(str));
+                        sb.append(varName + "=" + unParsedFormula + "=" + str + "=" + converter.getVarBase().get(Utils.clean(varName)) + "\n");
+                    } else if (str.substring(0, str.indexOf(":")).equals("getVars")) {
+                        sb.append("List of saved variables:\n" + converter.getVars() + "\n");
+                    } else {
                         sb.append("Unknown command on line: " + lineCounter + "\n");
                     }
+                } catch (StringIndexOutOfBoundsException e) {
+                    sb.append("Unknown command on line: " + lineCounter + "\n");
                 }
-                outputArea.setText(sb.toString());
-            } catch (IOException e) {
-                System.out.println("Looks like there was a problem a problem creating/reading the Excel file. Check the directory\n");
-                outputArea.setText("ERROR 01");
-            } catch (FormulaParseException e) {
-                outputArea.setText("Incorrect formula on line :" + lineCounter + "\n Check for syntax mistakes!");
-            } catch (NumberFormatException e) {
-                outputArea.setText("Incorrent variable declaration on line: "+ lineCounter);
             }
-        });
+            outputArea.setText(sb.toString());
+        } catch (IOException e) {
+            System.out.println("Looks like there was a problem a problem creating/reading the Excel file. Check the directory\n");
+            outputArea.setText("ERROR 01");
+        } catch (FormulaParseException e) {
+            outputArea.setText("Incorrect formula on line :" + lineCounter + "\n Check for syntax mistakes!");
+        } catch (NumberFormatException e) {
+            outputArea.setText("Incorrect variable declaration on line: "+ lineCounter);
+        }
+
     }
 }
 
