@@ -7,173 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f38bbdf-6906-4378-9a90-579f9339245e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_chrome_driver_3_14_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_java_3_14_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/poi-generated-file.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jfoenix-8.0.7.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/fmath_mathml_java.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/fmath_mathml_java.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jdom_2_0_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jdom_2_0_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/CalculatorUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/CalculatorUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/utilities/CalculatorImplExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/CalculatorImplExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/utilities/poi-generated-file.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/GenerateImage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/asana/Asana-Math.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/asana/Asana-Math.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/asana/descriptor.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/asana/descriptor.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVu LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/dejavu/DejaVu LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSans-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/dejavu/DejaVuSans-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSans-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/dejavu/DejaVuSans-BoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSans-ExtraLight.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/dejavu/DejaVuSans-ExtraLight.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSans-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/dejavu/DejaVuSans-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSans.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/dejavu/DejaVuSans.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSansMono-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/dejavu/DejaVuSansMono-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSansMono-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/dejavu/DejaVuSansMono-BoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSansMono-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/dejavu/DejaVuSansMono-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSansMono.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/dejavu/DejaVuSansMono.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSerif-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/dejavu/DejaVuSerif-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSerif-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/dejavu/DejaVuSerif-BoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSerif-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/dejavu/DejaVuSerif-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSerif.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/dejavu/DejaVuSerif.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/dejavu/descriptor.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/dejavu/descriptor.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/diwanltr/Diwanltr.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/diwanltr/Diwanltr.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/diwanltr/descriptor.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/diwanltr/descriptor.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/fonts.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/fonts.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/sazanami/descriptor.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/sazanami/descriptor.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/sazanami/sazanami-gothic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/sazanami/sazanami-gothic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/script/ITCEDSCR.TTF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/script/ITCEDSCR.TTF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/script/descriptor.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/script/descriptor.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIX Font License 2010.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIX Font License 2010.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXDoubleStruck-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXDoubleStruck-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXDoubleStruck-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXDoubleStruck-BoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXDoubleStruck-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXDoubleStruck-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXDoubleStruck.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXDoubleStruck.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXFraktur-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXFraktur-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXFraktur.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXFraktur.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Bold-Unicode.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXGeneral-Bold-Unicode.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXGeneral-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-BoldItalic-Unicode.otf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXGeneral-BoldItalic-Unicode.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-BoldItalic-Unicode.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXGeneral-BoldItalic-Unicode.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXGeneral-BoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Italic-Unicode.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXGeneral-Italic-Unicode.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXGeneral-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Regular-Unicode.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXGeneral-Regular-Unicode.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXGeneral-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneralUnicode-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXGeneralUnicode-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneralUnicode-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXGeneralUnicode-BoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneralUnicode-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXGeneralUnicode-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXMonospace.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXMonospace.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXSansSerif-Bold-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXSansSerif-Bold-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXSansSerif-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXSansSerif-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXSansSerif-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXSansSerif-BoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXSansSerif-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXSansSerif-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXSansSerif.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXSansSerif.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXScript-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXScript-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/STIXScript.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/STIXScript.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/stix/descriptor.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/stix/descriptor.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/trado/descriptor.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/trado/descriptor.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/fonts/trado/trado.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/fonts/trado/trado.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/glyphs/glyph1.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/glyphs/glyph1.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/glyphs/glyph1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/glyphs/glyph1.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/glyphs/glyph1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/glyphs/glyph1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/glyphs/glyph1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/glyphs/glyph1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/glyphs/transp.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/glyphs/transp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/images/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/example/mathml/test.mathml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/library/fmath-mathml-java.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/library/fmath-mathml-java.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/fmath/library/jdom-2.0.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/library/jdom-2.0.6.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/imagegenerator/ImageGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/imagegenerator/images/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/parser/Parser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/help/helpUI.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/help/helpUI.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CalculatorUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CalculatorUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CalculatorUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CalculatorUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/CalculatorUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/CalculatorUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/calculator/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/calculator/Calculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/calculator/utilities/CalculatorImplExcel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/calculator/utilities/poi-generated-file.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/common/OperatorHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/converter/Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/converter/Converter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/files/example-good-for-word.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/mathml/files/example-good-for-word.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/GenerateImage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/asana/Asana-Math.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/asana/descriptor.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVu LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSans-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSans-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSans-ExtraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSans-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSans.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSansMono-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSansMono-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSansMono-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSansMono.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSerif-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSerif-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSerif-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/dejavu/DejaVuSerif.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/dejavu/descriptor.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/diwanltr/Diwanltr.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/diwanltr/descriptor.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/fonts.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/sazanami/descriptor.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/sazanami/sazanami-gothic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/script/ITCEDSCR.TTF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/script/descriptor.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIX Font License 2010.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXDoubleStruck-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXDoubleStruck-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXDoubleStruck-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXDoubleStruck.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXFraktur-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXFraktur.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Bold-Unicode.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-BoldItalic-Unicode.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-BoldItalic-Unicode.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Italic-Unicode.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Regular-Unicode.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneral-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneralUnicode-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneralUnicode-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXGeneralUnicode-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXMonospace.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXSansSerif-Bold-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXSansSerif-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXSansSerif-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXSansSerif-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXSansSerif.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXScript-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/STIXScript.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/stix/descriptor.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/trado/descriptor.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/fonts/trado/trado.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/glyphs/glyph1.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/glyphs/glyph1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/glyphs/glyph1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/glyphs/glyph1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/glyphs/transp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/images/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/example/mathml/test.mathml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/library/fmath-mathml-java.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/fmath/library/jdom-2.0.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/imagegenerator/ImageGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/imagegenerator/images/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/parser/Parser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/parser/Run.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/templates/template4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/templates/template4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/application/api/common/UtilsTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/application/api/converter/ConverterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/poi-generated-file.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/poi-generated-file.xlsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -192,88 +27,7 @@
     <favorites_list name="CalculatorUI" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pom.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#553#554#0" expanded="true" />
-                    <element signature="e#581#582#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Converter.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#1571#1572#0" expanded="true" />
-                    <element signature="e#1625#1626#0" expanded="true" />
-                    <element signature="e#1672#1673#0" expanded="true" />
-                    <element signature="e#1720#1721#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="helpUI.txt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/application/help/helpUI.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1547">
-                  <caret line="25" selection-start-line="25" selection-end-line="25" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -347,8 +101,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="2" />
+    <option name="y" value="117" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -734,7 +488,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -744,12 +497,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33156216" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33156216" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" x="-794" y="151" width="447" height="1177" id="Project" order="0" type="WINDOWED" visible="true" weight="0.1640625" />
+      <window_info content_ui="combo" x="503" y="31" width="447" height="968" id="Project" order="0" type="WINDOWED" weight="0.1640625" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1077,13 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/help/helpUI.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1098,12 +844,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/help/helpUI.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+        <state relative-caret-position="221">
+          <caret line="121" column="32" lean-forward="true" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="e#1609#1610#0" expanded="true" />
           </folding>
         </state>
       </provider>
