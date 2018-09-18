@@ -1,22 +1,38 @@
 package com.application;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 import com.application.api.calculator.Calculator;
 import com.application.api.Utils;
 import com.application.api.converter.Converter;
 import com.application.api.converter.VariableBase;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.text.TextAlignment;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import org.apache.poi.ss.formula.FormulaParseException;
 
+
+/**
+ * NOTE: Actions for buttons etc. are set in FXML file!
+ */
 public class Controller {
 
+    //directories
+    private final String DIRECTORY_HELP = "src/main/java/com/application/appdata/help/helpUI.txt";
+    private final String DIRECTORY_TEMPLATES = "src/main/java/com/application/appdata/templates/";
+    //
+
     private Calculator calculator = new Calculator();
+
+    Stage primaryStage = Main.getPrimaryStage();
+
+    private FileChooser fileOpener;
+    private FileChooser fileSaver;
+    private SimpleObjectProperty<File> lastKnownDirectoryProperty = new SimpleObjectProperty<>();
 
     @FXML
     private MenuButton templateMenu;
@@ -27,17 +43,36 @@ public class Controller {
     @FXML
     private TextArea inputArea;
 
-
-
+    
     @FXML
     void initialize() {
         initializeTemplateMenu();
         initializeInstructionsTextAndAlert();
+        initializeTextFileOpener();
+        initializeTextFileSaver();
     }
+
+
+    @FXML
+    void initializeTextFileOpener() {
+        fileOpener = new FileChooser();
+        fileOpener.setTitle("Open Saved Calculations");
+        // setting to open only .txt files
+        fileOpener.getExtensionFilters().add(new FileChooser.ExtensionFilter("Normal text file","*.txt"));
+    }
+
+    @FXML
+    void initializeTextFileSaver(){
+        fileSaver = new FileChooser();
+        fileSaver.initialDirectoryProperty().bindBidirectional(lastKnownDirectoryProperty);
+        fileSaver.setTitle("Save Calculations");
+        fileSaver.getExtensionFilters().add(new FileChooser.ExtensionFilter("Normal text file","*.txt"));
+    }
+
 
     private Alert alert;
     void initializeInstructionsTextAndAlert() {
-        File template = new File("src/main/java/com/application/help/helpUI.txt");
+        File template = new File(DIRECTORY_HELP);
         StringBuilder collect = new StringBuilder();
         try {
             Scanner scanner = new Scanner(template);
@@ -63,7 +98,7 @@ public class Controller {
 
     private void initializeTemplateMenu() {
         templateMenu.setTextAlignment(TextAlignment.CENTER);
-        File folder = new File("src/main/java/com/application/templates/");
+        File folder = new File(DIRECTORY_TEMPLATES);
         // getting templates
         File[] listOfTemplates = folder.listFiles();
         // adding items to MenuButton
@@ -76,7 +111,7 @@ public class Controller {
             // creating action when menu item is pressed
             // main objective is to copy text from template file to input area
             menuItem.setOnAction(event -> {
-                File template = new File("src/main/java/com/application/templates/"+ templateName);
+                File template = new File(DIRECTORY_TEMPLATES + templateName);
                 try {
                     Scanner scanner = new Scanner(template);
                     StringBuilder collect = new StringBuilder();
@@ -95,42 +130,50 @@ public class Controller {
 
     @FXML
     private void parse() {
-        Converter converter = new Converter();
-        VariableBase variableBase = new VariableBase();
-        StringBuilder sb = new StringBuilder();
-        int lineCounter = 0;
+        Converter converter = new Converter(); // converts variables to numbers from variablebase
+        VariableBase variableBase = new VariableBase(); // stores variable names, values and units
+        StringBuilder sb = new StringBuilder(); // collects lines to output to output area
+        int lineCounter = 0; // counts lines
         try {
-            for (String str : inputArea.getText().split("\\n")) {
+            // linebreak splits into individual lines to parse
+            for (String stringToParse : inputArea.getText().split("\\n")) {
                 lineCounter++;
-                Utils.clean(str);
                 try {
-                    if (str.equals("")) {
+                    if (stringToParse.equals("") ) { // if line is empty
                         sb.append("\n");
-                    } else if (str.substring(0, str.indexOf(":")).equals("calc")) {
-                        sb.append(calculator.calculate(str.substring(str.indexOf(":") + 1, str.length())) + "\n");
-                    } else if (str.substring(0, str.indexOf(":")).equals("comment")) {
-                        sb.append(str.substring("comment:".length() + 1) + "\n");
-                    } else if (str.substring(0, str.indexOf(":")).equals("set")) {
-                        str = Utils.clean(str);
-                        String varName = str.substring(str.indexOf(":") + 1, str.indexOf('='));
-                        str = Utils.clean(str.substring(str.indexOf('=') + 1, str.length()));
-                        converter.setVar(varName + "=" + str);
-                        sb.append(varName + '=' + converter.getVarBase().get(Utils.clean(varName)) + "\n");
-                    } else if ((str.substring(0, 5).equals("calcf") && str.contains("="))) {
+                    } else if (stringToParse.substring(0, stringToParse.indexOf(":")).equals("c")) { // if the lines is meant as a comment
+                        // removing syntax and appending to stringbuilder
+                        sb.append(stringToParse.substring(stringToParse.indexOf(":") + 1) + "\n");
+                    } else if (stringToParse.substring(0, stringToParse.indexOf(":")).equals("set")) { // if the lines is meant as a variable setter
+                        stringToParse = Utils.clean(stringToParse);
+                        // parsing variable name
+                        String varName = stringToParse.substring(stringToParse.indexOf(':') + 1, stringToParse.indexOf('='));
+                        // parsing variables value
+                        String value = stringToParse.substring(stringToParse.indexOf('=') + 1, stringToParse.indexOf(','));
+                        // parsing variables unit
+                        String unit = stringToParse.substring(stringToParse.indexOf(',') + 1);
+                        // adding variable to variable base
+                        variableBase.add(varName,value,unit);
+                        // showing result in output area
+                        sb.append(varName + " = " + variableBase.getValue(varName) + ' ' + variableBase.getUnit(varName) + "\n");
+                    } else if ((stringToParse.substring(0, 5).equals("calcf") && stringToParse.contains("="))) {
+                        stringToParse = Utils.clean(stringToParse);
                         // setting decimal place from calcf(x): <-- where x is the parameter
-                        String stringForSettingDecimalPlace = str.substring(0, str.indexOf(':'));
-                        calculator.setDecimalPlace(Integer.parseInt(stringForSettingDecimalPlace.substring(stringForSettingDecimalPlace.indexOf('(') + 1, stringForSettingDecimalPlace.indexOf(')'))));
-                        // getting varname, which is after : and before =
-                        String varName = str.substring(str.indexOf(":") + 1, str.indexOf('='));
-                        // saving formula to string (not converted)
-                        String unParsedFormula = Utils.clean(str.substring(str.indexOf('=') + 1, str.length()));
+                        String decimalPlaceNumber = stringToParse.substring(0, stringToParse.indexOf(':'));
+                        calculator.setDecimalPlace(Integer.parseInt(decimalPlaceNumber.substring(decimalPlaceNumber.indexOf('(') + 1, decimalPlaceNumber.indexOf(')'))));
+                        // parsing varname, which is after : and before =
+                        String varName = stringToParse.substring(stringToParse.indexOf(':') + 1, stringToParse.indexOf('='));
+                        // parsing formula (not converted)
+                        String unCalculatedFormula = stringToParse.substring(stringToParse.indexOf('=') + 1, stringToParse.indexOf(','));
+                        // parsing variables unit
+                        String unit = stringToParse.substring(stringToParse.indexOf(',') + 1);
                         // saving formula
-                        str = converter.convertString(unParsedFormula);
+                        String calculatedFormula = converter.convertString(unCalculatedFormula, variableBase);
                         // calculating formula and saving to varbase
-                        converter.setVar(varName + "=" + calculator.calculate(str));
-                        sb.append(varName + "=" + unParsedFormula + "=" + str + "=" + converter.getVarBase().get(Utils.clean(varName)) + "\n");
-                    } else if (str.substring(0, str.indexOf(":")).equals("getVars")) {
-                        sb.append("List of saved variables:\n" + converter.getVars() + "\n");
+                        variableBase.add(varName, calculator.calculate(calculatedFormula), unit);
+                        sb.append(varName + " = " + unCalculatedFormula + " = " + calculatedFormula + " = " + variableBase.getValue(varName) + " " + variableBase.getUnit(varName) + "\n");
+                    } else if (stringToParse.substring(0, stringToParse.indexOf(":")).equals("getVars")) {
+                        sb.append("List of saved variables:\n" + variableBase.getVariableBaseListed() + "\n");
                     } else {
                         sb.append("Unknown command on line: " + lineCounter + "\n");
                     }
@@ -148,6 +191,57 @@ public class Controller {
             outputArea.setText("Incorrect variable declaration on line: "+ lineCounter);
         }
 
+    }
+
+
+    @FXML
+    private void openFile() {
+        File file = fileOpener.showOpenDialog((primaryStage));
+        try {
+            if (file != null) {
+                saveLastKnownDirectory(file);
+                String savedText = readFile(file);
+                displayFileInInputArea(savedText);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    private String readFile(File file) throws IOException {
+        StringBuilder stringBuilder = new StringBuilder();
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+        String line;
+        while ((line = bufferedReader.readLine()) != null) {
+            stringBuilder.append(line + "\n");
+        }
+        bufferedReader.close();
+        return stringBuilder.toString();
+    }
+    private void displayFileInInputArea(String string) {
+        inputArea.clear();
+        inputArea.setText(string);
+    }
+
+
+    @FXML
+    private void saveFile() {
+        try {
+            File file = fileSaver.showSaveDialog(primaryStage);
+            if (file != null) {
+                saveLastKnownDirectory(file);
+                String text = inputArea.getText();
+                FileWriter fileWriter = new FileWriter(file);
+                fileWriter.write(text);
+                fileWriter.close();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public void saveLastKnownDirectory(File file) {
+            lastKnownDirectoryProperty.setValue(file.getParentFile());
     }
 }
 

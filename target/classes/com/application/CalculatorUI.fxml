@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="500.0" style="visibility: true; -fx-background-color: #757707;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.Controller">
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="500.0" style="visibility: true; -fx-background-color: #757707;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.Controller">
    <children>
       <SplitPane dividerPositions="0.65" layoutX="6.0" layoutY="-264.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" style="-fx-box-border: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -21,8 +21,8 @@
                     <items>
                       <AnchorPane maxWidth="100.0" minHeight="406.0" minWidth="100.0" prefHeight="474.0" prefWidth="100.0" style="-fx-box-border: transparent;">
                            <children>
-                              <Button layoutX="-3.0" layoutY="262.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="212.0" text="Save calculations" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
-                              <Button layoutY="329.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="234.0" text="Load calculations" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="69.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+                              <Button layoutX="-3.0" layoutY="262.0" mnemonicParsing="false" onAction="#saveFile" prefHeight="59.0" prefWidth="212.0" text="Save calculations" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+                              <Button layoutY="329.0" mnemonicParsing="false" onAction="#openFile" prefHeight="59.0" prefWidth="234.0" text="Load calculations" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="69.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
                               <MenuButton fx:id="templateMenu" layoutX="2.0" layoutY="38.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="234.0" text="Templates" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
                                 <items>
                                 </items>

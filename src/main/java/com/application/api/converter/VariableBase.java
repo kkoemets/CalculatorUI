@@ -1,5 +1,6 @@
 package com.application.api.converter;
 
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -11,32 +12,36 @@ import java.util.Map;
 public class VariableBase {
 
     private Map<String, String> variableBase;
+    private Map<String, String> units;
 
     public VariableBase() {
         variableBase = new LinkedHashMap<>();
+        units = new HashMap<>();
     }
 
 
-    public void add(String variable, String value) {
+    public void add(String variable, String value, String unit) {
         try {
             Double.parseDouble(value);
         } catch (NumberFormatException e) {
             throw new NumberFormatException();
         }
         variableBase.put(variable, value);
+        units.put(variable, unit);
     }
 
 
     public void deleteAll() {
         variableBase.clear();
+        units.clear();
     }
 
 
-    public String getValue(String variable) {
-        if (variableBase.containsKey(variable)) {
-            return variableBase.get(variable);
+    public String getValue(String variableName) {
+        if (variableBase.containsKey(variableName)) {
+            return variableBase.get(variableName);
         }
-        return this + "Does not contain variable " + variable;
+        return this + "Does not contain variable " + variableName;
     }
 
 
@@ -49,7 +54,7 @@ public class VariableBase {
         StringBuilder sb = new StringBuilder();
         if (!isEmpty()) {
             for (String key : variableBase.keySet()) {
-                sb.append("    " + key + "=" +variableBase.get(key)+"\n");
+                sb.append("    " + key + "=" +variableBase.get(key) + ", " + units.get(key) +"\n");
             }
             sb.replace(sb.lastIndexOf("\n"),sb.length(),"");
             return sb.toString();
@@ -62,7 +67,14 @@ public class VariableBase {
         return variableBase.containsKey(string);
     }
 
+
     public Map<String, String> getVariableBase() {
         return variableBase;
     }
+
+
+    public String getUnit(String variableName) {
+        return units.get(variableName);
+    }
+
 }
