@@ -1,0 +1,18 @@
+c:-----Tala tugevuskontroll
+set: V_Ed = 50, kN // arvutuslik põikjõud
+set: M_Ed = 50, kNm // arvutuslik paindemoment
+c:---Kaitsekiht
+set: c = 25, mm
+c:---Tala parameetrid
+set: L = 1, m // tala pikkus
+set: h = 1, m // tala kõrgus
+set: b = 1, m // tala laius
+set: f_ck = 25, MPa // betooni tugevusklass
+set: f_yk = 500, MPa // armatuuri norm voolavuspiir
+c:---Pikiarmatuuri parameetrid
+set: dia_tõmbe = 20, mm // tõmbearmatuuri läbimõõt
+set: n_tõmbe = 2, tk // tõmbearmatuuri kogus
+set: dia_surve = 20, mm // survearmatuuri läbimõõt
+set: n_surve = 2, tk // survearmatuuri kogus
+calcf(0): A_s1 = n_tõmbe*PI()*dia_tõmbe^2/4, mm2
+calcf(0): A_s2 = n_tõmbe*PI()*dia_tõmbe^2/4, mm2

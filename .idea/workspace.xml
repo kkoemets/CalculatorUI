@@ -2,27 +2,43 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="CalculatorUI:jar" />
+      <artifact name="CalculatorUI" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f38bbdf-6906-4378-9a90-579f9339245e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_fxmisc_richtext_richtextfx_0_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/appdata/templates/Tala armatuuri dimensioneerimine.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CalculatorUI_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CalculatorUI_jar/CalculatorUI.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/application/CalculatorUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/CalculatorUI.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/application/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/CalculatorImplExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/CalculatorImplExcel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/poi-generated-file.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/poi-generated-file.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/converter/VariableBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/converter/VariableBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/help/helpUI.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/appdata/help/helpUI.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/templates/Lihttala paindemoment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/appdata/templates/Lihttala paindemoment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/templates/Test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/appdata/templates/Test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/templates/template4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/appdata/templates/template4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/templates/template5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/appdata/templates/template5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/appdata/help/helpUI.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/appdata/help/helpUI.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/appdata/templates/Lihttala paindemoment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/appdata/templates/Test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/appdata/templates/Test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/appdata/templates/template4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/appdata/templates/template5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/CalculatorUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CalculatorUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CalculatorUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CalculatorUI.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/application/CalculatorUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/CalculatorUI.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/application/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/application/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/calculator/CalculatorImplExcel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/calculator/CalculatorImplExcel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/calculator/poi-generated-file.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/calculator/poi-generated-file.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/converter/Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/converter/Converter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/converter/VariableBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/converter/VariableBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/appdata/help/helpUI.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/appdata/help/helpUI.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/appdata/templates/Lihttala paindemoment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/appdata/templates/Test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/appdata/templates/Test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/appdata/templates/template4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/appdata/templates/template5.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,90 +57,89 @@
     <favorites_list name="CalculatorUI" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.55625">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-3197">
-                  <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#1574#1575#0" expanded="true" />
-                    <element signature="e#1609#1610#0" expanded="true" />
-                    <element signature="e#9514#9515#0" expanded="true" />
-                    <element signature="e#9591#9592#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Test.txt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/application/appdata/templates/Test.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="template4.txt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/application/appdata/templates/template4.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="VariableBase.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/VariableBase.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-                  <folding>
-                    <element signature="e#1723#1724#0" expanded="true" />
-                    <element signature="e#1778#1779#0" expanded="true" />
-                    <element signature="e#1830#1831#0" expanded="true" />
-                    <element signature="e#1865#1866#0" expanded="true" />
-                    <element signature="e#1833#1834#0" expanded="true" />
-                    <element signature="e#1879#1880#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="19" selection-start-column="19" selection-end-column="19" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#9514#9515#0" expanded="true" />
-                    <element signature="e#9591#9592#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Converter.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="92" column="32" lean-forward="true" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3068#3069#0" expanded="true" />
+                <element signature="e#3103#3104#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tala armatuuri dimensioneerimine.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/appdata/templates/Tala armatuuri dimensioneerimine.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalculatorUI.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/CalculatorUI.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+              <folding>
+                <element signature="e#590#591#0" expanded="true" />
+                <element signature="e#630#631#0" expanded="true" />
+                <element signature="e#1418#1419#0" expanded="true" />
+                <element signature="e#1446#1447#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VariableBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/VariableBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <folding>
+                <element signature="e#1723#1724#0" expanded="true" />
+                <element signature="e#1778#1779#0" expanded="true" />
+                <element signature="e#2079#2080#0" expanded="true" />
+                <element signature="e#2108#2109#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Converter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -139,6 +154,7 @@
       <find>mi</find>
       <find>opera</find>
       <find>clean</find>
+      <find>controller</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,23 +201,27 @@
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/mathml/files/example-good-for-word.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/mathml/parser/Parser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/calculator/utilities/CalculatorImplExcel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/application/api/calculator/CalculatorImplExcel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/mathml/imagegenerator/ImageGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/application/CalculatorUI.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/help/helpUI.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/api/calculator/CalculatorImplExcel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/appdata/templates/Test.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/appdata/help/helpUI.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/CalculatorUI.fxml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/converter/VariableBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/appdata/templates/Tala armatuuri dimensioneerimine.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -258,31 +278,56 @@
               <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="appdata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="appdata" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -299,7 +344,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/jfoenix-8.0.7.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.4237443" />
+    <property name="project.structure.side.proportion" value="0.59962755" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
@@ -309,13 +354,6 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\api\mathml" />
-      <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\api\calculator" />
-      <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\resources" />
-      <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\api\mathml\files" />
-      <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\templates" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.application.api.converter" />
       <recent name="com.application.api" />
@@ -323,15 +361,22 @@
       <recent name="com.application.api.calculator.utilities" />
       <recent name="com.application" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.application.api.mathml.fmath.example" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\appdata\templates" />
       <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\resources" />
       <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\api\mathml" />
       <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\api\mathml\fmath\example\images" />
       <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\api\mathml\fmath\example\mathml" />
-      <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\api\mathml\fmath\example" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.application.api.mathml.fmath.example" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\api\mathml" />
+      <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\api\calculator" />
+      <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\resources" />
+      <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\api\mathml\files" />
+      <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -383,6 +428,17 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="TestRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.application.api.converter.TestRun" />
+      <module name="CalculatorUI" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.application.api.converter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -399,29 +455,6 @@
       <option name="PACKAGE_NAME" value="com.application.api.calculator" />
       <option name="MAIN_CLASS_NAME" value="com.application.api.calculator.CalculatorTest" />
       <option name="METHOD_NAME" value="calculate" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="CalculatorTest.calculateEquation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CalculatorUI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.application.api.calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.application.api.calculator" />
-      <option name="MAIN_CLASS_NAME" value="com.application.api.calculator.CalculatorTest" />
-      <option name="METHOD_NAME" value="calculateEquation" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -486,17 +519,17 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.CalculatorTest.calculate" />
-      <item itemvalue="JUnit.CalculatorTest.calculateEquation" />
       <item itemvalue="Application.CalculatorImplExcel" />
       <item itemvalue="Application.Run" />
+      <item itemvalue="Application.TestRun" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.TestRun" />
         <item itemvalue="Application.Run" />
         <item itemvalue="Application.CalculatorImplExcel" />
         <item itemvalue="JUnit.CalculatorTest.calculate" />
-        <item itemvalue="JUnit.CalculatorTest.calculateEquation" />
       </list>
     </recent_temporary>
   </component>
@@ -558,11 +591,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23060574" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23060574" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" x="-472" y="41" width="447" height="968" id="Project" order="0" type="WINDOWED" visible="true" weight="0.1640625" />
+      <window_info active="true" content_ui="combo" x="459" y="56" width="447" height="968" id="Project" order="0" type="WINDOWED" visible="true" weight="0.1640625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -590,27 +623,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
-            <element signature="e#1609#1610#0" expanded="true" />
-            <element signature="e#9514#9515#0" expanded="true" />
-            <element signature="e#9591#9592#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
           <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
-            <element signature="e#1609#1610#0" expanded="true" />
-            <element signature="e#9514#9515#0" expanded="true" />
-            <element signature="e#9591#9592#0" expanded="true" />
+            <element signature="e#3068#3069#0" expanded="true" />
+            <element signature="e#3103#3104#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -768,99 +785,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/application/api/converter/ConverterTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/application/api/common/UtilsTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/calculator/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/calculator/CalculatorImplExcel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="113" selection-start-line="29" selection-start-column="113" selection-end-line="29" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/imagegenerator/ImageGenerator.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/parser/Parser.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="68" lean-forward="true" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/appdata/help/helpUI.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/CalculatorUI.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-          <folding>
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#1018#1019#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/appdata/settings/last-saved-file-directory.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="63" selection-start-column="63" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/VariableBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#1723#1724#0" expanded="true" />
-            <element signature="e#1778#1779#0" expanded="true" />
-            <element signature="e#1830#1831#0" expanded="true" />
-            <element signature="e#1865#1866#0" expanded="true" />
-            <element signature="e#1833#1834#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/appdata/templates/Test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -871,17 +801,113 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="24" column="68" lean-forward="true" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/calculator/CalculatorImplExcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/calculator/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/appdata/templates/Test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/appdata/help/helpUI.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/CalculatorUI.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/CalculatorUI.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+          <folding>
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+            <element signature="e#1446#1447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/VariableBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="e#1723#1724#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="e#2079#2080#0" expanded="true" />
+            <element signature="e#2108#2109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3197">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        <state relative-caret-position="289">
+          <caret line="92" column="32" lean-forward="true" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
-            <element signature="e#1609#1610#0" expanded="true" />
-            <element signature="e#9514#9515#0" expanded="true" />
-            <element signature="e#9591#9592#0" expanded="true" />
+            <element signature="e#3068#3069#0" expanded="true" />
+            <element signature="e#3103#3104#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/appdata/templates/Tala armatuuri dimensioneerimine.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -891,11 +917,11 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>CalculatorUI:jar</last-edited>
+          <last-edited>CalculatorUI</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.4237443" />
+                <option value="0.59962755" />
                 <option value="0.5" />
               </list>
             </option>
@@ -943,7 +969,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.59962755" />
                 <option value="0.6" />
               </list>
             </option>
@@ -964,11 +990,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>org.apache.poi:poi-ooxml:3.17</last-edited>
+          <last-edited>org.fxmisc.richtext:richtextfx:0.9.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.4237443" />
+                <option value="0.59962755" />
               </list>
             </option>
           </splitter-proportions>

@@ -12,6 +12,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class CalculatorImplExcel {
+
+    private final String DIRECTORY_XLSX_FILE = "src\\main\\java\\com\\application\\api\\calculator\\poi-generated-file.xlsx";
+
     public double calculate(String string) throws IOException {
         // creating new xlsx workbook
         Workbook workbook = new XSSFWorkbook();
@@ -21,13 +24,13 @@ public class CalculatorImplExcel {
         // setting the to be calculated formula to cell(0,0)
         row.createCell(0).setCellFormula(string);
         // creating file output stream to xlsx file
-        FileOutputStream fileOut = new FileOutputStream("src\\main\\java\\com\\application\\api\\calculator\\poi-generated-file.xlsx");
+        FileOutputStream fileOut = new FileOutputStream(DIRECTORY_XLSX_FILE);
         // writing to xlsx file
         workbook.write(fileOut);
         // closing the stream
         fileOut.close();
         // reading the xlsx file with file input stream
-        FileInputStream file = new FileInputStream(new File("src\\main\\java\\com\\application\\api\\calculator\\poi-generated-file.xlsx"));
+        FileInputStream file = new FileInputStream(new File(DIRECTORY_XLSX_FILE));
         // setting the xlsx workbook
         workbook = new XSSFWorkbook(file);
         // recalculating formulas

@@ -10,16 +10,23 @@ import com.application.api.converter.VariableBase;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.apache.poi.ss.formula.FormulaParseException;
 
-
+//todo!!! warning when overwriting variable in vBase?
+//todo!!! line numbers! maybe something simpler in the beginning
+//todo!!! save last save directory
+//todo!!! quick-save file with shortcut  (already opened file)
+//todo!!! error messages make no sense!!!
+//todo!!! declaring variables on different lines seems unreasonable, maybe try something else? '|'
 /**
  * NOTE: Actions for buttons etc. are set in FXML file!
  */
 public class Controller {
+
 
     //directories
     private final String DIRECTORY_HELP = "src/main/java/com/application/appdata/help/helpUI.txt";
@@ -43,9 +50,14 @@ public class Controller {
     @FXML
     private TextArea inputArea;
 
-    
+    @FXML
+    private Text fileLocationText;
+
+
+
     @FXML
     void initialize() {
+        outputArea.setEditable(false);
         initializeTemplateMenu();
         initializeInstructionsTextAndAlert();
         initializeTextFileOpener();
@@ -56,6 +68,7 @@ public class Controller {
     @FXML
     void initializeTextFileOpener() {
         fileOpener = new FileChooser();
+        fileOpener.initialDirectoryProperty().bindBidirectional(lastKnownDirectoryProperty);
         fileOpener.setTitle("Open Saved Calculations");
         // setting to open only .txt files
         fileOpener.getExtensionFilters().add(new FileChooser.ExtensionFilter("Normal text file","*.txt"));
@@ -138,6 +151,9 @@ public class Controller {
             // linebreak splits into individual lines to parse
             for (String stringToParse : inputArea.getText().split("\\n")) {
                 lineCounter++;
+                if (stringToParse.contains("//")) { // removing possible comments
+                    stringToParse = stringToParse.substring(0, stringToParse.indexOf("//"));
+                }
                 try {
                     if (stringToParse.equals("") ) { // if line is empty
                         sb.append("\n");
@@ -149,9 +165,9 @@ public class Controller {
                         // parsing variable name
                         String varName = stringToParse.substring(stringToParse.indexOf(':') + 1, stringToParse.indexOf('='));
                         // parsing variables value
-                        String value = stringToParse.substring(stringToParse.indexOf('=') + 1, stringToParse.indexOf(','));
+                        String value = stringToParse.substring(stringToParse.indexOf('=') + 1, stringToParse.lastIndexOf(','));
                         // parsing variables unit
-                        String unit = stringToParse.substring(stringToParse.indexOf(',') + 1);
+                        String unit = stringToParse.substring(stringToParse.lastIndexOf(',') + 1);
                         // adding variable to variable base
                         variableBase.add(varName,value,unit);
                         // showing result in output area
@@ -164,9 +180,9 @@ public class Controller {
                         // parsing varname, which is after : and before =
                         String varName = stringToParse.substring(stringToParse.indexOf(':') + 1, stringToParse.indexOf('='));
                         // parsing formula (not converted)
-                        String unCalculatedFormula = stringToParse.substring(stringToParse.indexOf('=') + 1, stringToParse.indexOf(','));
+                        String unCalculatedFormula = stringToParse.substring(stringToParse.indexOf('=') + 1, stringToParse.lastIndexOf(','));
                         // parsing variables unit
-                        String unit = stringToParse.substring(stringToParse.indexOf(',') + 1);
+                        String unit = stringToParse.substring(stringToParse.lastIndexOf(',') + 1);
                         // saving formula
                         String calculatedFormula = converter.convertString(unCalculatedFormula, variableBase);
                         // calculating formula and saving to varbase
@@ -186,6 +202,7 @@ public class Controller {
             System.out.println("Looks like there was a problem a problem creating/reading the Excel file. Check the directory\n");
             outputArea.setText("ERROR 01");
         } catch (FormulaParseException e) {
+            e.printStackTrace();
             outputArea.setText("Incorrect formula on line :" + lineCounter + "\n Check for syntax mistakes!");
         } catch (NumberFormatException e) {
             outputArea.setText("Incorrect variable declaration on line: "+ lineCounter);
@@ -242,6 +259,7 @@ public class Controller {
 
     public void saveLastKnownDirectory(File file) {
             lastKnownDirectoryProperty.setValue(file.getParentFile());
+            fileLocationText.setText(file.getAbsolutePath());
     }
 }
 

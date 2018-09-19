@@ -9,6 +9,7 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.input.KeyCodeCombination?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="500.0" style="visibility: true; -fx-background-color: #757707;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.Controller">
@@ -44,6 +45,10 @@
                   <TextArea fx:id="inputArea" layoutX="82.0" layoutY="16.0" prefHeight="198.0" prefWidth="498.0" style="-fx-control-inner-background: #292c2d; -fx-text-fill: #b8b9ba; -fx-font-size: 12px; -fx-background-color: #757707;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0" />
                   <Text fill="WHITE" layoutY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input area:" wrappingWidth="497.99999594688416" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="5.0" />
                   <Button layoutX="382.0" layoutY="246.0" mnemonicParsing="false" onAction="#parse" prefHeight="25.0" prefWidth="106.0" text="Parse" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="5.0" />
+                  <Text fx:id="fileLocationText" fill="WHITE" layoutX="4.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="381.99999928474426" AnchorPane.bottomAnchor="4.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Text>
                </children>
             </AnchorPane>
         </items>
@@ -55,7 +60,8 @@
               <MenuItem mnemonicParsing="false" onAction="#parse" text="Parse">
                      <accelerator>
                         <KeyCodeCombination alt="UP" code="S" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
-                     </accelerator></MenuItem>
+                     </accelerator>
+                  </MenuItem>
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
@@ -65,7 +71,8 @@
                         <KeyCodeCombination alt="UP" code="F1" control="UP" meta="UP" shift="UP" shortcut="UP" />
                      </accelerator>
                   </MenuItem>
-               </items></Menu>
+               </items>
+            </Menu>
         </menus>
       </MenuBar>
    </children>

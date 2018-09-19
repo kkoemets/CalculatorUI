@@ -13,10 +13,12 @@ public class VariableBase {
 
     private Map<String, String> variableBase;
     private Map<String, String> units;
+    private int length;
 
     public VariableBase() {
         variableBase = new LinkedHashMap<>();
         units = new HashMap<>();
+        length = 0;
     }
 
 
@@ -28,12 +30,14 @@ public class VariableBase {
         }
         variableBase.put(variable, value);
         units.put(variable, unit);
+        length++;
     }
 
 
     public void deleteAll() {
         variableBase.clear();
         units.clear();
+        length = 0;
     }
 
 
@@ -75,6 +79,10 @@ public class VariableBase {
 
     public String getUnit(String variableName) {
         return units.get(variableName);
+    }
+
+    public int getLength() {
+        return length;
     }
 
 }
