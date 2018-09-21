@@ -28,6 +28,11 @@ public class VariableBase {
         } catch (NumberFormatException e) {
             throw new NumberFormatException();
         }
+        if (variableBase.containsKey(variable)) {
+            variableBase.remove(variable);
+            units.remove(variable);
+            length--;
+        }
         variableBase.put(variable, value);
         units.put(variable, unit);
         length++;

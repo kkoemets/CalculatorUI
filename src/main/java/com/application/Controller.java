@@ -22,6 +22,10 @@ import org.apache.poi.ss.formula.FormulaParseException;
 //todo!!! quick-save file with shortcut  (already opened file)
 //todo!!! error messages make no sense!!!
 //todo!!! declaring variables on different lines seems unreasonable, maybe try something else? '|'
+//todo!!! NEW API TO COMPARE vars 1 < 2 etc...! urgent
+//todo!!! critical bug!  Unused input [qrt(200/651)] after attempting to parse the formula [1+8qrt(200/651)] with variable 's'
+//todo!!! critical design problem! remake UI
+//todo!!! urgent!!! ASCII TO MATHML
 /**
  * NOTE: Actions for buttons etc. are set in FXML file!
  */
