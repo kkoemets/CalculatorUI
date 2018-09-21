@@ -1,46 +1,46 @@
 c:-----Tala tugevuskontroll
 c:---Arvutuslikud sisejõud
-set: V_Ed = 50, kN // muuta
-set: M_Ed = 50, kNm // muuta
+set: V_(Ed) = 50, kN // muuta
+set: M_(Ed) = 50, kNm // muuta
 c:---Kaitsekiht
 set: c = 25, mm
 c:---Tala parameetrid
 set: L = 10000, mm // muuta
 set: h = 700, mm // muuta
 set: b = 300, mm // muuta
-set: f_ck = 25, MPa // muuta
-set: f_yk = 500, MPa // muuta
-calcf(1): f_cd = f_ck/1.5, MPa // betooni tugevusklass
-calcf(0): f_yd = f_yk/1.15, MPa // tõmbearmatuuri arv voolavuspiir
-calcf(0): f_ycd = f_yk/1.15, MPa // survearmatuuri arv voolavuspiir
+set: f_(ck) = 25, MPa // muuta
+set: f_(yk) = 500, MPa // muuta
+calcf(1): f_(cd) = f_(ck)/1.5, MPa // betooni tugevusklass
+calcf(0): f_(yd) = f_(yk)/1.15, MPa // tõmbearmatuuri arv voolavuspiir
+calcf(0): f_(ycd) = f_(yk)/1.15, MPa // survearmatuuri arv voolavuspiir
 c:---Pikiarmatuuri parameetrid
-set: dia_tõmbe = 32, mm // muuta
-set: n_tõmbe = 4, tk  // muuta
-set: dia_surve = 20, mm  // muuta
-set: n_surve = 2, tk  // muuta
-calcf(0): A_s1 = n_tõmbe*PI()*dia_tõmbe^2/4, mm2
-calcf(0): A_s2 = n_surve*PI()*dia_surve^2/4, mm2
+set: dia_(tõmbe) = 32, mm // muuta
+set: n_(tõmbe) = 4, tk  // muuta
+set: dia_(surve) = 20, mm  // muuta
+set: n_(surve) = 2, tk  // muuta
+calcf(0): A_(s1) = n_(tõmbe)*PI()*(dia_(tõmbe))^2/4, mm2
+calcf(0): A_(s2) = n_(surve)*PI()*(dia_(surve))^2/4, mm2
 c:---Rangide parameetrid
-set: dia_rang = 8, mm  // muuta
-calcf(0): A_sw = 2*pi()*dia_rang^2/4, mm2
-calcf(0): f_ywd = 340, MPa // 500/1.15
-set: s_rang = 340
+set: dia_(rang) = 8, mm  // muuta
+calcf(0): A_(sw) = 2*pi()*(dia_(rang))^2/4, mm2
+calcf(0): f_(ywd) = 340, MPa // 500/1.15
+set: s_(rang) = 340, mm
 c:---Paindekandevõime kontroll
-calcf(0): d_1 = h-c-dia_rang-dia_tõmbe/2, mm
-calcf(0): d_2 = c+dia_rang+dia_surve/2, mm
-calcf(0): x = (f_yd*A_s1-f_ycd*A_s2)/(0.8*f_cd*b), mm
-calcf(3): ξ_c1 = x/d_1,   // B500B puhul < 0.617
+calcf(0): d_1 = h-c-dia_(rang)-(dia_(tõmbe))/2, mm
+calcf(0): d_2 = c+dia_(rang)+(dia_(surve))/2, mm
+calcf(0): x = (f_(yd)*A_(s1)-f_(ycd)*A_(s2))/(0.8*f_(cd)*b), mm
+calcf(3): ξ_(c1) = x/d_1,   // B500B puhul < 0.617
 c:							< 0.617
-calcf(3): ξ_c2 = x/d_2,   // B500B puhul > 2.333
+calcf(3): ξ_(c2) = x/d_2,   // B500B puhul > 2.333
 c:							< 2.333
-calcf(1): M_Rd = (f_cd*b*0.8*x*(d_1-0.5*0.8*x)+f_ycd*A_s2*(d_1-d_2))/10^6, kNm
+calcf(1): M_(Rd) = (f_(cd)*b*0.8*x*(d_1-0.5*0.8*x)+f_(ycd)*A_(s2)*(d_1-d_2))/10^6, kNm
 c:---Põikjõukandevõime kontroll
 calcf(2): k = 1+sqrt(200/d_1),  // <= 2.0
-calcf(2): v_min = 0.035*sqrt(k^3*f_ck), MPa
-set: A_sl = 3000, mm2
-calcf(3): ρ_1 = A_sl/(b*d_1),  // <= 0.02
-calcf(2): C_Rd,c = 0.18/1.5, // kus 1.5 on betooni varutegur
-calcf(1): V_Rd,c = C_Rd,c*k*(100*ρ_1*f_ck)^(1/3)*b*d_1/1000, kN
+calcf(2): v_(min) = 0.035*sqrt(k^3*f_(ck)), MPa
+set: A_(sl) = 3000, mm2
+calcf(3): ρ_1 = A_(sl)/(b*d_1),  // <= 0.02
+calcf(2): C_(Rd,c) = 0.18/1.5, // kus 1.5 on betooni varutegur
+calcf(1): V_(Rd,c) = C_(Rd,c)*k*(100*ρ_1*f_(ck))^(1/3)*b*d_1/1000, kN
 
 set: θ = 2.5,
 calcf(0): z = 0.9*d_1, mm

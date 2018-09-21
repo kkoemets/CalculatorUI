@@ -32,7 +32,7 @@
                         </AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="447.0" prefWidth="256.0">
                            <children>
-                              <TextArea fx:id="outputArea" layoutX="23.0" layoutY="41.0" prefHeight="453.0" prefWidth="359.0" style="-fx-control-inner-background: #292c2d; -fx-text-fill: #b8b9ba; -fx-font-size: 12px; -fx-background-color: #757707;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0" />
+                              <TextArea fx:id="outputArea" layoutX="23.0" layoutY="41.0" prefHeight="453.0" prefWidth="359.0" style="-fx-control-inner-background: #292c2d; -fx-text-fill: #ffffff; -fx-font-size: 12px; -fx-background-color: #757707;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0" />
                               <Text fill="WHITE" layoutX="3.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output area:" wrappingWidth="284.9999964237213" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="22.0" />
                            </children>
                         </AnchorPane>
@@ -42,7 +42,7 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #353538;">
                <children>
-                  <TextArea fx:id="inputArea" layoutX="82.0" layoutY="16.0" prefHeight="198.0" prefWidth="498.0" style="-fx-control-inner-background: #292c2d; -fx-text-fill: #b8b9ba; -fx-font-size: 12px; -fx-background-color: #757707;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0" />
+                  <TextArea fx:id="inputArea" layoutX="82.0" layoutY="16.0" prefHeight="198.0" prefWidth="498.0" style="-fx-control-inner-background: #292c2d; -fx-text-fill: #ffffff; -fx-font-size: 12px; -fx-background-color: #757707;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0" />
                   <Text fill="WHITE" layoutY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input area:" wrappingWidth="497.99999594688416" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="5.0" />
                   <Button layoutX="382.0" layoutY="246.0" mnemonicParsing="false" onAction="#parse" prefHeight="25.0" prefWidth="106.0" text="Parse" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="5.0" />
                   <Text fx:id="fileLocationText" fill="WHITE" layoutX="4.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="381.99999928474426" AnchorPane.bottomAnchor="4.0">
@@ -62,6 +62,7 @@
                         <KeyCodeCombination alt="UP" code="S" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
                      </accelerator>
                   </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#formulasToMathMLToWord" text="MathML" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">

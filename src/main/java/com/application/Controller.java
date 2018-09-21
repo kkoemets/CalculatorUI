@@ -7,6 +7,8 @@ import com.application.api.calculator.Calculator;
 import com.application.api.Utils;
 import com.application.api.converter.Converter;
 import com.application.api.converter.VariableBase;
+import com.application.api.mathml.MathMLConverter;
+import com.application.api.mathml.WordFileWriter;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -16,16 +18,11 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.apache.poi.ss.formula.FormulaParseException;
 
-//todo!!! warning when overwriting variable in vBase?
-//todo!!! line numbers! maybe something simpler in the beginning
 //todo!!! save last save directory
 //todo!!! quick-save file with shortcut  (already opened file)
-//todo!!! error messages make no sense!!!
-//todo!!! declaring variables on different lines seems unreasonable, maybe try something else? '|'
 //todo!!! NEW API TO COMPARE vars 1 < 2 etc...! urgent
 //todo!!! critical bug!  Unused input [qrt(200/651)] after attempting to parse the formula [1+8qrt(200/651)] with variable 's'
 //todo!!! critical design problem! remake UI
-//todo!!! urgent!!! ASCII TO MATHML
 /**
  * NOTE: Actions for buttons etc. are set in FXML file!
  */
@@ -35,6 +32,7 @@ public class Controller {
     //directories
     private final String DIRECTORY_HELP = "src/main/java/com/application/appdata/help/helpUI.txt";
     private final String DIRECTORY_TEMPLATES = "src/main/java/com/application/appdata/templates/";
+    private final String DIRECTORY_MATHML = "src\\main\\java\\com\\application\\appdata\\mathml\\mathml.txt";
     //
 
     private Calculator calculator = new Calculator();
@@ -145,16 +143,17 @@ public class Controller {
         }
     }
 
+
+    StringBuilder formulaCollector  = null; // collects variables and equations to be translated into MathMLConverter
     @FXML
     private void parse() {
         Converter converter = new Converter(); // converts variables to numbers from variablebase
         VariableBase variableBase = new VariableBase(); // stores variable names, values and units
         StringBuilder sb = new StringBuilder(); // collects lines to output to output area
-        int lineCounter = 0; // counts lines
+        formulaCollector = new StringBuilder();
         try {
             // linebreak splits into individual lines to parse
             for (String stringToParse : inputArea.getText().split("\\n")) {
-                lineCounter++;
                 if (stringToParse.contains("//")) { // removing possible comments
                     stringToParse = stringToParse.substring(0, stringToParse.indexOf("//"));
                 }
@@ -176,6 +175,9 @@ public class Controller {
                         variableBase.add(varName,value,unit);
                         // showing result in output area
                         sb.append(varName + " = " + variableBase.getValue(varName) + ' ' + variableBase.getUnit(varName) + "\n");
+                        //
+                        formulaCollector.append(varName + " = " + variableBase.getValue(varName) + ' ' + variableBase.getUnit(varName) + "\n");
+
                     } else if ((stringToParse.substring(0, 5).equals("calcf") && stringToParse.contains("="))) {
                         stringToParse = Utils.clean(stringToParse);
                         // setting decimal place from calcf(x): <-- where x is the parameter
@@ -192,13 +194,16 @@ public class Controller {
                         // calculating formula and saving to varbase
                         variableBase.add(varName, calculator.calculate(calculatedFormula), unit);
                         sb.append(varName + " = " + unCalculatedFormula + " = " + calculatedFormula + " = " + variableBase.getValue(varName) + " " + variableBase.getUnit(varName) + "\n");
+                        //
+                        formulaCollector.append(varName + " = " + unCalculatedFormula + " = " + calculatedFormula + " = " + variableBase.getValue(varName) + " " + variableBase.getUnit(varName) + "\n");
                     } else if (stringToParse.substring(0, stringToParse.indexOf(":")).equals("getVars")) {
                         sb.append("List of saved variables:\n" + variableBase.getVariableBaseListed() + "\n");
                     } else {
-                        sb.append("Unknown command on line: " + lineCounter + "\n");
+                        outputArea.setText(sb.toString() + "\nUnknown command");
                     }
                 } catch (StringIndexOutOfBoundsException e) {
-                    sb.append("Unknown command on line: " + lineCounter + "\n");
+                    outputArea.setText(sb.toString() + "\nUnknown command");
+                    break;
                 }
             }
             outputArea.setText(sb.toString());
@@ -207,11 +212,31 @@ public class Controller {
             outputArea.setText("ERROR 01");
         } catch (FormulaParseException e) {
             e.printStackTrace();
-            outputArea.setText("Incorrect formula on line :" + lineCounter + "\n Check for syntax mistakes!");
+            outputArea.setText(sb.toString() + "\nCheck for syntax mistakes!");
         } catch (NumberFormatException e) {
-            outputArea.setText("Incorrect variable declaration on line: "+ lineCounter);
+            e.printStackTrace();
+            outputArea.setText(sb.toString() + "\nIncorrect variable declaration");
         }
+    }
 
+    @FXML
+    public void formulasToMathMLToWord() {
+        if (formulaCollector == null || formulaCollector.length() == 0) return;
+        MathMLConverter mathMLConverter = new MathMLConverter();
+        for (String formula : formulaCollector.toString().split("\\n")) {
+            mathMLConverter.addFormula(formula);
+        }
+        String mathMLCode = mathMLConverter.convert();
+        File file = new File(DIRECTORY_MATHML);
+        try {
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
+            bufferedWriter.write(mathMLCode);
+            bufferedWriter.close();
+            WordFileWriter wordFileWriter = new WordFileWriter();
+            wordFileWriter.writeMathML(mathMLCode);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" async src="MathJax.js?config=TeX-MML-AM_CHTML"></script><title></title>
+</head>
+<body>
+
+`V_(Ed) = 50 kN`
+<br>
+`M_(Ed) = 50 kNm`
+<br>
+`c = 25 mm`
+<br>
+`L = 10000 mm`
+<br>
+`h = 700 mm`
+<br>
+`b = 300 mm`
+<br>
+`f_(ck) = 25 MPa`
+<br>
+`f_(yk) = 500 MPa`
+<br>
+`f_(cd) = f_(ck)/1.5 = 25/1.5 = 16.7 MPa`
+<br>
+`f_(yd) = f_(yk)/1.15 = 500/1.15 = 435 MPa`
+<br>
+`f_(ycd) = f_(yk)/1.15 = 500/1.15 = 435 MPa`
+<br>
+`dia_(tõmbe) = 32 mm`
+<br>
+`n_(tõmbe) = 4 tk`
+<br>
+`dia_(surve) = 20 mm`
+<br>
+`n_(surve) = 2 tk`
+<br>
+`A_(s1) = n_(tõmbe)*PI()*(dia_(tõmbe))^2/4 = 4*PI()*(32)^2/4 = 3217 mm2`
+<br>
+`A_(s2) = n_(surve)*PI()*(dia_(surve))^2/4 = 2*PI()*(20)^2/4 = 628 mm2`
+<br>
+`dia_(rang) = 8 mm`
+<br>
+`A_(sw) = 2*pi()*(dia_(rang))^2/4 = 2*pi()*(8)^2/4 = 101 mm2`
+<br>
+`f_(ywd) = 340 = 340 = 340 MPa`
+<br>
+`s_(rang) = 340 mm`
+<br>
+`d_1 = h-c-dia_(rang)-(dia_(tõmbe))/2 = 700-25-8-(32)/2 = 651 mm`
+<br>
+`d_2 = c+dia_(rang)+(dia_(surve))/2 = 25+8+(20)/2 = 43 mm`
+<br>
+`x = (f_(yd)*A_(s1)-f_(ycd)*A_(s2))/(0.8*f_(cd)*b) = (435*3217-435*628)/(0.8*16.7*300) = 281 mm`
+<br>
+`ξ_(c1) = x/d_1 = 281/651 = 0.432 `
+<br>
+`ξ_(c2) = x/d_2 = 281/43 = 6.535 `
+<br>
+`M_(Rd) = (f_(cd)*b*0.8*x*(d_1-0.5*0.8*x)+f_(ycd)*A_(s2)*(d_1-d_2))/10^6 = (16.7*300*0.8*281*(651-0.5*0.8*281)+435*628*(651-43))/10^6 = 772.7 kNm`
+<br>
+`k = 1+sqrt(200/d_1) = 1+sqrt(200/651) = 1.55 `
+<br>
+`v_(min) = 0.035*sqrt(k^3*f_(ck)) = 0.035*sqrt(1.55^3*25) = 0.34 MPa`
+<br>
+`A_(sl) = 3000 mm2`
+<br>
+`ρ_1 = A_(sl)/(b*d_1) = 3000/(300*651) = 0.015 `
+<br>
+`C_(Rd,c) = 0.18/1.5 = 0.18/1.5 = 0.12 `
+<br>
+`V_(Rd,c) = C_(Rd,c)*k*(100*ρ_1*f_(ck))^(1/3)*b*d_1/1000 = 0.12*1.55*(100*0.015*25)^(1/3)*300*651/1000 = 121.6 kN`
+<br>
+`θ = 2.5 `
+<br>
+`z = 0.9*d_1 = 0.9*651 = 586 mm`
+<br>
+
+</body>
+</html>
