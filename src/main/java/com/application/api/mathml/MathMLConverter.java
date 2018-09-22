@@ -1,5 +1,4 @@
 package com.application.api.mathml;
-import com.application.api.Utils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.openqa.selenium.chrome.ChromeDriver;

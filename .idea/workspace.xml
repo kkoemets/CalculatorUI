@@ -7,38 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97522e40-3d5e-4790-9049-98bf005c29e0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_zenjava_javafx_maven_plugin_8_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_poi_poi_ooxml_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/application/appdata/help/helpUI.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/application/appdata/mathml/ascii.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/application/appdata/mathml/mathml.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/application/appdata/settings/last-saved-file-directory.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/application/appdata/templates/Tala armatuuri dimensioneerimine.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/application/appdata/templates/Test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/fmath_mathml_java.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/poi-generated-file.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/poi-generated-file.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CalculatorUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/application/fxml/CalculatorUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jfoenix-8.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CalculatorUI.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/calculator/poi-generated-file.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/calculator/poi-generated-file.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/converter (1)/Converter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/converter (1)/TestRun.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/converter (1)/VariableBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/MathMLConverter.docx" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/mathml/MathMLConverter.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/appdata/help/helpUI.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/appdata/mathml/ascii.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/appdata/settings/last-saved-file-directory.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/appdata/templates/Tala armatuuri dimensioneerimine.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/appdata/templates/Test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jfoenix-8.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="136">
               <caret line="30" column="26" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="117" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -76,27 +45,6 @@
                 <element signature="e#3550#3551#0" expanded="true" />
                 <element signature="e#3585#3586#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MathMLConverter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="helpUI.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/appdata/help/helpUI.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -157,7 +105,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="423" />
     <option name="y" value="305" />
     <option name="width" value="974" />
@@ -176,74 +124,6 @@
             <path>
               <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="mathml" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="mathml" type="462c0819:PsiDirectoryNode" />
-              <item name="MathMLConverter.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
@@ -494,14 +374,14 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5026042" side_tool="true" visible="true" weight="0.32943678" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="8" sideWeight="0.5026042" side_tool="true" visible="true" weight="0.32943678" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49739584" visible="true" weight="0.32943678" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1546875" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1546875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
@@ -523,7 +403,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url />
+          <url>file://$PROJECT_DIR$/src/test/java/com/application/api/converter/ConverterTest.java</url>
           <line>14</line>
           <properties />
         </line-breakpoint>
@@ -765,10 +645,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="117" />
+        <state relative-caret-position="34">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -787,10 +667,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="136">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="117" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -821,7 +701,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -881,7 +761,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Maven: org.apache.httpcomponents:httpcore:4.4.9</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
