@@ -1,0 +1,28 @@
+c:Alaliskoormuse varutegur
+set: γ_G = 1.2, -
+c:Muutuvkoormuse varutegur
+set: γ_Q = 1.5, -
+c:Normatiivne lumekoormus
+set: q_k2 = 1.2, kN/m2
+c:KOORMUSE LEIDMINE VAHELAEL
+c:---
+c:Normatiivne kasuskoormus vahelael
+set: q_vl,k = 2.0, kN/m2
+c:Normatiivne õõnespaneeli omakaal vuugitult (265mm)
+set: g_õõn,k =  3.8, kN/m2
+c:Normatiivne pealevalu õõnespaneelile omakaal (70mm)
+calcf(2): g_pv,k = 0.07*25, kN/m2
+c:Normatiivne mineraalvill õõnespaneelil omakaal (50mm)
+calcf(2): g_mv,k = 0.05*2, kN/m2
+c:Normatiivne parketi omakaal (15mm)
+calcf(2): g_parkett,k=0.015*7, kN/m2
+c:Kokku arvutuslik vahelae omakaal (400mm)
+calcf(2): g_vl,d = γ_G*(g_õõn,k+g_pv,k+g_mv,k+g_parkett,k), kN/m2
+c:Kokku arvutuslik vahelaelt tulenev koormus koos kasuskoormusega
+calcf(2): P_vl,d=g_vl,d+γ_Q*q_vl,k, kN/m2
+c:---
+c:KOORMUSE LEIDMINE KATUSLAEL
+c:---
+c: Pole infot, oletan et katuslae omakaal = vahelae omakaal esialgu
+calcf(2): P_kl,d = g_vl,d + γ_Q*2, kN/m2
+c:---

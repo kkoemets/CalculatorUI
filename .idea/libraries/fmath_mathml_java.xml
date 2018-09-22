@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="fmath-mathml-java">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/src/main/java/com/application/api/mathml/library/fmath-mathml-java.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

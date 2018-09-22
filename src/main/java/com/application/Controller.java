@@ -30,7 +30,7 @@ public class Controller {
 
 
     //directories
-    private final String DIRECTORY_HELP = "src/main/java/com/application/appdata/help/helpUI.txt";
+    private final String DIRECTORY_HELP = "com/application/appdata/help/helpUI.txt";
     private final String DIRECTORY_TEMPLATES = "src/main/java/com/application/appdata/templates/";
     private final String DIRECTORY_MATHML = "src\\main\\java\\com\\application\\appdata\\mathml\\mathml.txt";
     //
@@ -54,7 +54,6 @@ public class Controller {
 
     @FXML
     private Text fileLocationText;
-
 
 
     @FXML
@@ -87,15 +86,15 @@ public class Controller {
 
     private Alert alert;
     void initializeInstructionsTextAndAlert() {
-        File template = new File(DIRECTORY_HELP);
+        InputStream in = getClass().getClassLoader().getResourceAsStream(DIRECTORY_HELP);
         StringBuilder collect = new StringBuilder();
         try {
-            Scanner scanner = new Scanner(template);
-
-            while (scanner.hasNextLine()) {
-                collect.append(scanner.nextLine() + "\n");
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(in));
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                collect.append(line + "\n");
             }
-        } catch (FileNotFoundException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         alert = new Alert(Alert.AlertType.INFORMATION);
@@ -287,8 +286,7 @@ public class Controller {
 
 
     public void saveLastKnownDirectory(File file) {
-            lastKnownDirectoryProperty.setValue(file.getParentFile());
-            fileLocationText.setText(file.getAbsolutePath());
+        lastKnownDirectoryProperty.setValue(file.getParentFile());
+        fileLocationText.setText(file.getAbsolutePath());
     }
 }
-
