@@ -35,7 +35,6 @@ public class WordFileWriter {
             while ((startIndex = sb.indexOf("<math")) != -1) {
                 int endIndex = sb.indexOf("</math>") + "</math>".length();
                 writeTextToClipboard(sb.substring(startIndex,endIndex));
-                System.out.println(sb.subSequence(startIndex,endIndex));
                 pasteClipboard(r);
                 alignLeft(r);
                 r.keyPress(KeyEvent.VK_END);

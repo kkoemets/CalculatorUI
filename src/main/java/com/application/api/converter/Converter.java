@@ -2,8 +2,6 @@ package com.application.api.converter;
 
 import java.util.Arrays;
 
-class TestRun {
-}
 
 public class Converter {
 

@@ -4,17 +4,6 @@ import org.jsoup.nodes.Document;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.io.*;
 
-
-class TestRun {
-    public static void main(String[] args) throws Exception {
-        MathMLConverter mathML = new MathMLConverter();
-        for (int i = 0; i < 1; i++) {
-            mathML.addFormula("M_(Rd) = (f_cd*b*0.8*x*(d_1-0.5*0.8*x)+f_ycd*A_s2*(d_1-d_2))/10^6 = (16.7*300*0.8*281*(651-0.5*0.8*281)+435*628*(651-43))/10^6 = 772.7 kNm");
-        }
-        System.out.println(mathML.convert());
-    }
-}
-
 public class MathMLConverter {
     private final String DIRECTORY_HTML = "src\\main\\java\\com\\application\\api\\mathml\\MathJax-master\\mathml.html";
     private File htmlFile;

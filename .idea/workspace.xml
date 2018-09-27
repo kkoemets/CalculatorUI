@@ -7,7 +7,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97522e40-3d5e-4790-9049-98bf005c29e0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/poi-generated-file.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/poi-generated-file.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathJax-master/mathml.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathJax-master/mathml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/WordFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/WordFileWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/appdata/mathml/mathml.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/appdata/mathml/mathml.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/application/appdata/help/helpUI.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/application/appdata/mathml/ascii.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/application/appdata/mathml/mathml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/application/appdata/settings/last-saved-file-directory.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/application/appdata/templates/Tala armatuuri dimensioneerimine.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/application/appdata/templates/Test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/calculator/poi-generated-file.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/calculator/poi-generated-file.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/converter/Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/converter/Converter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/converter/TestRun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/MathJax-master/mathml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/mathml/MathJax-master/mathml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/MathMLConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/mathml/MathMLConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/MathMLConverter.docx" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/mathml/MathMLConverter.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/TestRun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/WordFileWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/mathml/WordFileWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/appdata/help/helpUI.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/appdata/mathml/ascii.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/appdata/mathml/mathml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/appdata/settings/last-saved-file-directory.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/appdata/templates/Tala armatuuri dimensioneerimine.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/application/appdata/templates/Test.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,11 +54,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Main.java">
+      <file leaf-file-name="WordFileWriter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/WordFileWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="30" column="26" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="117" />
+            <state relative-caret-position="447">
+              <caret line="36" column="72" selection-start-line="36" selection-start-column="72" selection-end-line="36" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,15 +66,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="826">
-              <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+            <state relative-caret-position="362">
+              <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3550#3551#0" expanded="true" />
-                <element signature="e#3585#3586#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-809">
+              <caret line="96" column="13" lean-forward="true" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3634#3635#0" expanded="true" />
+                <element signature="e#3669#3670#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Converter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MathMLConverter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1309">
+              <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,6 +126,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>sca</find>
+      <find>System</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -86,13 +151,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/mathml/WordFileHandler.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/application/api/mathml/WordFileWriterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/appdata/templates/Tala armatuuri dimensioneerimine.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/application/api/mathml/WordFileWriter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/Utils.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/application/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/application/fxml/CalculatorUI.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/application/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/api/mathml/WordFileWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/Controller.java" />
       </list>
     </option>
   </component>
@@ -106,10 +172,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="423" />
-    <option name="y" value="305" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="248" />
+    <option name="y" value="-23" />
+    <option name="width" value="1295" />
+    <option name="height" value="708" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -118,6 +184,8 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,12 +193,79 @@
               <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -374,20 +509,20 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="8" sideWeight="0.5026042" side_tool="true" visible="true" weight="0.32943678" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5026042" side_tool="true" weight="0.32943678" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49739584" visible="true" weight="0.32943678" />
       <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49739584" visible="true" weight="0.32943678" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1546875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1546875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -421,14 +556,56 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/WordFileWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3519">
+          <caret line="225" column="9" lean-forward="true" selection-start-line="225" selection-start-column="9" selection-end-line="225" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3634#3635#0" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="140" column="5" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3094">
           <caret line="200" column="28" selection-start-line="200" selection-start-column="28" selection-end-line="200" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3550#3551#0" expanded="true" />
-            <element signature="e#3585#3586#0" expanded="true" />
+            <element signature="e#3634#3635#0" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -479,13 +656,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="68" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/application/api/converter/ConverterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -524,9 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -544,16 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/WordFileWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="71" column="23" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
@@ -565,9 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,9 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -585,32 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/application/fxml/CalculatorUI.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="320" selection-start-line="14" selection-start-column="320" selection-end-line="14" selection-end-column="320" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/CalculatorUI.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/VariableBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#1966#1967#0" expanded="true" />
-            <element signature="e#2021#2022#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -635,9 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/application/appdata/help/helpUI.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/appdata/help/helpUI.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -645,10 +767,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/VariableBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#1966#1967#0" expanded="true" />
+            <element signature="e#2021#2022#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        <state relative-caret-position="1309">
+          <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/WordFileWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="36" column="72" selection-start-line="36" selection-start-column="72" selection-end-line="36" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -657,22 +817,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="826">
-          <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+        <state relative-caret-position="-809">
+          <caret line="96" column="13" lean-forward="true" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3550#3551#0" expanded="true" />
-            <element signature="e#3585#3586#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="117" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3634#3635#0" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
           </folding>
         </state>
       </provider>

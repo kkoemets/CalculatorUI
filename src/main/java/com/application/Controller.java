@@ -23,6 +23,7 @@ import org.apache.poi.ss.formula.FormulaParseException;
 //todo!!! NEW API TO COMPARE vars 1 < 2 etc...! urgent
 //todo!!! critical bug!  Unused input [qrt(200/651)] after attempting to parse the formula [1+8qrt(200/651)] with variable 's'
 //todo!!! critical design problem! remake UI
+//todo!!! LinkedHashMap
 /**
  * NOTE: Actions for buttons etc. are set in FXML file!
  */
@@ -30,7 +31,7 @@ public class Controller {
 
 
     //directories
-    private final String DIRECTORY_HELP = "com/application/appdata/help/helpUI.txt";
+    private final String DIRECTORY_HELP = "src/main/java/com/application/appdata/help/helpUI.txt";
     private final String DIRECTORY_TEMPLATES = "src/main/java/com/application/appdata/templates/";
     private final String DIRECTORY_MATHML = "src\\main\\java\\com\\application\\appdata\\mathml\\mathml.txt";
     //
@@ -86,9 +87,9 @@ public class Controller {
 
     private Alert alert;
     void initializeInstructionsTextAndAlert() {
-        InputStream in = getClass().getClassLoader().getResourceAsStream(DIRECTORY_HELP);
         StringBuilder collect = new StringBuilder();
         try {
+            InputStream in = new FileInputStream(DIRECTORY_HELP);
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(in));
             String line;
             while ((line = bufferedReader.readLine()) != null) {

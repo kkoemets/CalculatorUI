@@ -5,75 +5,99 @@
 </head>
 <body>
 
-`V_(Ed) = 50 kN`
+`-----Tuulekoormus`
 <br>
-`M_(Ed) = 50 kNm`
+`Maastikutüüp IV - Maastik, kus on vähemalt 15% pinnast kaetud hoonetega, mille keskmine kõrgus ületab 15 m.`
 <br>
-`c = 25 mm`
+`Seina eeldatav kõrgus:`
 <br>
-`L = 10000 mm`
+`z = 15.7 m`
 <br>
-`h = 700 mm`
+`Kiirusrõhk`
 <br>
-`b = 300 mm`
+`q_p = (15.15*(ln(z))^2+106.6*ln(z))*10^-3 = (15.15*(ln(15.7))^2+106.6*ln(15.7))*10^-3 = 0.41 (kN)/m^2`
 <br>
-`f_(ck) = 25 MPa`
+`-----Ristkülikupõhiplaaniga hoone püstseinte koormustsoonid ja tuulerõhutegurid`
 <br>
-`f_(yk) = 500 MPa`
+`---Tuul pikemal küljel`
 <br>
-`f_(cd) = f_(ck)/1.5 = 25/1.5 = 16.7 MPa`
+`Hoone kõrgus h`
 <br>
-`f_(yd) = f_(yk)/1.15 = 500/1.15 = 435 MPa`
+`h = 15.7 m`
 <br>
-`f_(ycd) = f_(yk)/1.15 = 500/1.15 = 435 MPa`
+`Tuulega paralleelne külje pikkus`
 <br>
-`dia_(tõmbe) = 32 mm`
+`d = 18.2 m`
 <br>
-`n_(tõmbe) = 4 tk`
+` Tuulega risti külje pikkus`
 <br>
-`dia_(surve) = 20 mm`
+`b = 33.6 m`
 <br>
-`n_(surve) = 2 tk`
+`(h/d) = h/d = 15.7/18.2 = 0.86 `
 <br>
-`A_(s1) = n_(tõmbe)*PI()*(dia_(tõmbe))^2/4 = 4*PI()*(32)^2/4 = 3217 mm2`
+`e = min(b,2*h) = min(33.6,2*15.7) = 31.4 m`
 <br>
-`A_(s2) = n_(surve)*PI()*(dia_(surve))^2/4 = 2*PI()*(20)^2/4 = 628 mm2`
+` h < b - tuulekiirus konstantne `
 <br>
-`dia_(rang) = 8 mm`
+` e > d - 2 tsooni külgedel, A ja B`
 <br>
-`A_(sw) = 2*pi()*(dia_(rang))^2/4 = 2*pi()*(8)^2/4 = 101 mm2`
+`---Ristkülikupõhiplaaniga hoone seine tuule rõhutegurid`
 <br>
-`f_(ywd) = 340 = 340 = 340 MPa`
+`c_(pe,A) = -1.2 `
 <br>
-`s_(rang) = 340 mm`
+`c_(pe,B) = -0.8 `
 <br>
-`d_1 = h-c-dia_(rang)-(dia_(tõmbe))/2 = 700-25-8-(32)/2 = 651 mm`
+`c_(pe,D) = 0.8 `
 <br>
-`d_2 = c+dia_(rang)+(dia_(surve))/2 = 25+8+(20)/2 = 43 mm`
+`c_(pe,E) = -0.5 `
 <br>
-`x = (f_(yd)*A_(s1)-f_(ycd)*A_(s2))/(0.8*f_(cd)*b) = (435*3217-435*628)/(0.8*16.7*300) = 281 mm`
+`q_(w,A,k) = c_(pe,A)*q_p = -1.2*0.41 = -0.49 (kN)/m^2`
 <br>
-`ξ_(c1) = x/d_1 = 281/651 = 0.432 `
+`q_(w,B,k) = c_(pe,B)*q_p = -0.8*0.41 = -0.33 (kN)/m^2`
 <br>
-`ξ_(c2) = x/d_2 = 281/43 = 6.535 `
+`q_(w,D,k) = c_(pe,D)*q_p = 0.8*0.41 = 0.33 (kN)/m^2`
 <br>
-`M_(Rd) = (f_(cd)*b*0.8*x*(d_1-0.5*0.8*x)+f_(ycd)*A_(s2)*(d_1-d_2))/10^6 = (16.7*300*0.8*281*(651-0.5*0.8*281)+435*628*(651-43))/10^6 = 772.7 kNm`
+`q_(w,E,k) = c_(pe,E)*q_p = -0.5*0.41 = -0.20 (kN)/m^2`
 <br>
-`k = 1+sqrt(200/d_1) = 1+sqrt(200/651) = 1.55 `
+`---Tuul pikemal küljel (hoone ots)`
 <br>
-`v_(min) = 0.035*sqrt(k^3*f_(ck)) = 0.035*sqrt(1.55^3*25) = 0.34 MPa`
+`Tuulega paralleelne külje pikkus`
 <br>
-`A_(sl) = 3000 mm2`
+`d = 33.6 m`
 <br>
-`ρ_1 = A_(sl)/(b*d_1) = 3000/(300*651) = 0.015 `
+` Tuulega risti külje pikkus`
 <br>
-`C_(Rd,c) = 0.18/1.5 = 0.18/1.5 = 0.12 `
+`b = 18.2 m`
 <br>
-`V_(Rd,c) = C_(Rd,c)*k*(100*ρ_1*f_(ck))^(1/3)*b*d_1/1000 = 0.12*1.55*(100*0.015*25)^(1/3)*300*651/1000 = 121.6 kN`
+`(h/d) = h/d = 15.7/33.6 = 0.47 `
 <br>
-`θ = 2.5 `
+`e = min(b,2*h) = min(18.2,2*15.7) = 18.2 m`
 <br>
-`z = 0.9*d_1 = 0.9*651 = 586 mm`
+` h < b - tuulekiirus konstantne `
+<br>
+` e < d - 2 tsooni külgedel, A, B, C`
+<br>
+`---Ristkülikupõhiplaaniga hoone seine tuule rõhutegurid`
+<br>
+`c_(pe,A) = -1.2 `
+<br>
+`c_(pe,B) = -0.8 `
+<br>
+`c_(pe,C) = -0.5 `
+<br>
+`c_(pe,D) = 0.8 `
+<br>
+`c_(pe,E) = -0.5 `
+<br>
+`q_(w,A,k) = c_(pe,A)*q_p = -1.2*0.41 = -0.49 (kN)/m^2`
+<br>
+`q_(w,B,k) = c_(pe,B)*q_p = -0.8*0.41 = -0.33 (kN)/m^2`
+<br>
+`q_(w,C,k) = c_(pe,C)*q_p = -0.5*0.41 = -0.20 (kN)/m^2`
+<br>
+`q_(w,D,k) = c_(pe,D)*q_p = 0.8*0.41 = 0.33 (kN)/m^2`
+<br>
+`q_(w,E,k) = c_(pe,E)*q_p = -0.5*0.41 = -0.20 (kN)/m^2`
 <br>
 
 </body>
