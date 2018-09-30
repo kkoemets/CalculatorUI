@@ -8,7 +8,7 @@ import com.application.api.Utils;
 import com.application.api.converter.Converter;
 import com.application.api.converter.VariableBase;
 import com.application.api.mathml.MathMLConverter;
-import com.application.api.mathml.WordFileWriter;
+import com.application.api.mathml.WordWriter;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -23,7 +23,6 @@ import org.apache.poi.ss.formula.FormulaParseException;
 //todo!!! NEW API TO COMPARE vars 1 < 2 etc...! urgent
 //todo!!! critical bug!  Unused input [qrt(200/651)] after attempting to parse the formula [1+8qrt(200/651)] with variable 's'
 //todo!!! critical design problem! remake UI
-//todo!!! LinkedHashMap
 /**
  * NOTE: Actions for buttons etc. are set in FXML file!
  */
@@ -33,7 +32,6 @@ public class Controller {
     //directories
     private final String DIRECTORY_HELP = "src/main/java/com/application/appdata/help/helpUI.txt";
     private final String DIRECTORY_TEMPLATES = "src/main/java/com/application/appdata/templates/";
-    private final String DIRECTORY_MATHML = "src\\main\\java\\com\\application\\appdata\\mathml\\mathml.txt";
     //
 
     private Calculator calculator = new Calculator();
@@ -144,13 +142,11 @@ public class Controller {
     }
 
 
-    StringBuilder formulaCollector  = null; // collects variables and equations to be translated into MathMLConverter
     @FXML
     private void parse() {
         Converter converter = new Converter(); // converts variables to numbers from variablebase
         VariableBase variableBase = new VariableBase(); // stores variable names, values and units
         StringBuilder sb = new StringBuilder(); // collects lines to output to output area
-        formulaCollector = new StringBuilder();
         try {
             // linebreak splits into individual lines to parse
             for (String stringToParse : inputArea.getText().split("\\n")) {
@@ -176,8 +172,6 @@ public class Controller {
                         // showing result in output area
                         sb.append(varName + " = " + variableBase.getValue(varName) + ' ' + variableBase.getUnit(varName) + "\n");
                         //
-                        formulaCollector.append(varName + " = " + variableBase.getValue(varName) + ' ' + variableBase.getUnit(varName) + "\n");
-
                     } else if ((stringToParse.substring(0, 5).equals("calcf") && stringToParse.contains("="))) {
                         stringToParse = Utils.clean(stringToParse);
                         // setting decimal place from calcf(x): <-- where x is the parameter
@@ -195,7 +189,6 @@ public class Controller {
                         variableBase.add(varName, calculator.calculate(calculatedFormula), unit);
                         sb.append(varName + " = " + unCalculatedFormula + " = " + calculatedFormula + " = " + variableBase.getValue(varName) + " " + variableBase.getUnit(varName) + "\n");
                         //
-                        formulaCollector.append(varName + " = " + unCalculatedFormula + " = " + calculatedFormula + " = " + variableBase.getValue(varName) + " " + variableBase.getUnit(varName) + "\n");
                     } else if (stringToParse.substring(0, stringToParse.indexOf(":")).equals("getVars")) {
                         sb.append("List of saved variables:\n" + variableBase.getVariableBaseListed() + "\n");
                     } else {
@@ -221,22 +214,18 @@ public class Controller {
 
     @FXML
     public void formulasToMathMLToWord() {
-        if (formulaCollector == null || formulaCollector.length() == 0) return;
-        MathMLConverter mathMLConverter = new MathMLConverter();
-        for (String formula : formulaCollector.toString().split("\\n")) {
-            mathMLConverter.addFormula(formula);
+        String lines = outputArea.getText();
+        if (lines == null || lines.length() < 1) return;
+        MathMLConverter converter = new MathMLConverter();
+        for (String line : lines.split("\\n")) {
+            converter.addLine(line);
         }
-        String mathMLCode = mathMLConverter.convert();
-        File file = new File(DIRECTORY_MATHML);
-        try {
-            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
-            bufferedWriter.write(mathMLCode);
-            bufferedWriter.close();
-            WordFileWriter wordFileWriter = new WordFileWriter();
-            wordFileWriter.writeMathML(mathMLCode);
-        } catch (IOException e) {
-            e.printStackTrace();
+        converter.convert();
+        WordWriter wordWriter = new WordWriter();
+        for (String line : converter.getAllLinesAsList()) {
+            wordWriter.addLine(line);
         }
+        wordWriter.write();
     }
 
 

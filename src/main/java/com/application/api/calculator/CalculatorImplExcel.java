@@ -11,7 +11,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class CalculatorImplExcel {
+class CalculatorImplExcel {
 
     private final String DIRECTORY_XLSX_FILE = "src\\main\\java\\com\\application\\api\\calculator\\poi-generated-file.xlsx";
 

@@ -2,12 +2,17 @@ package com.application.api.mathml;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.openqa.selenium.chrome.ChromeDriver;
-import java.io.*;
 
+import java.io.*;
+import java.util.LinkedList;
+
+
+/** Takes strings as input and outputs strings, mathematical strings as MathML code
+ */
 public class MathMLConverter {
+
     private final String DIRECTORY_HTML = "src\\main\\java\\com\\application\\api\\mathml\\MathJax-master\\mathml.html";
     private File htmlFile;
-    private StringBuilder formulaCollector;
     private ChromeDriver driver;
     private final String HTML_TEMPLATE =
             "<!DOCTYPE html>\n" +
@@ -23,38 +28,46 @@ public class MathMLConverter {
                     "</body>\n" +
                     "</html>";
 
+
+    private LinkedList<String> textLines;
+    private LinkedList<String> mathLines;
+    private LinkedList<LineType> lineQueue;
+
+    enum LineType {
+        TEXT,
+        MATH
+    }
+
+
     public MathMLConverter() {
         htmlFile = new File(DIRECTORY_HTML);
         System.setProperty("webdriver.chrome.driver","src\\main\\java\\com\\application\\api\\mathml\\chromedriver.exe");
-        formulaCollector = new StringBuilder();
         driver = new ChromeDriver();
+
+        textLines = new LinkedList<>();
+        mathLines = new LinkedList<>();
+        lineQueue = new LinkedList<>();
     }
 
 
-    /**
-     * Converts stored formulas into MathMLConverter
-     * @return
-     *          - string of MathMLConverter code
+    /** Converts stored math into MathMLConverter
      */
-    public String convert() {
-        String converted = "";
+    public void convert() {
         try {
             createHtmlFileTemplate();
             addFormulasToHtml();
-            converted = getMathMLFromHtml();
+            mathLines = getMathMLFromHtml();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return converted;
     }
 
 
-    /**
-     * Loads HTML file into web-browser, so that JavaScript will be loaded and MathMLConverter can be extracted
+    /** Loads HTML file into web-browser, so that JavaScript will be loaded and MathMLConverter can be extracted
      * @return
-     *          - string of MathMLConverter code
+     *          - list of MathML code, each entry is math as MathML
      */
-    private String getMathMLFromHtml() {
+    private LinkedList<String> getMathMLFromHtml() {
         driver.get(htmlFile.getAbsolutePath());
         try {
             while (!driver.getPageSource().contains("<math xmlns=\"http://www.w3.org/1998/Math/MathML\">")) {
@@ -69,46 +82,45 @@ public class MathMLConverter {
     }
 
 
-    /**
-     * Extracts MathMLConverter from HTML file
+    /** Extracts MathMLConverter from HTML file
      * @param sourceCode
      * @return
-     *          - string of MathMLConverter code
+     *          - list of MathML code, each entry is math as MathML
      */
-    private String parseHtmlToMathML(String sourceCode) {
+    private LinkedList<String> parseHtmlToMathML(String sourceCode) {
         StringBuilder sb = new StringBuilder(sourceCode);
-        StringBuilder collector = new StringBuilder();
+        LinkedList<String> mathML = new LinkedList<>();
         int startIndex;
         while ((startIndex = sb.indexOf("<math xmlns=\"http://www.w3.org/1998/Math/MathML\">")) != -1) {
             sb.replace(0, startIndex, "");
             startIndex = 0;
             int endIndex = sb.indexOf("</math>") + "</math>".length();
-            collector.append(sb.substring(startIndex, endIndex) + "\n");
-            sb.replace(startIndex,endIndex,"");
+            mathML.addLast(sb.substring(startIndex, endIndex));
+            sb.replace(startIndex, endIndex, "");
         }
-        return collector.toString();
+        return mathML;
     }
 
 
-    /**
-     * Create template for replacing "$FORMULA" with collected formulas in formulaCollector (instance of StringBuilder)
+    /** Create template for replacing "$FORMULA" with collected formulas in formulaCollector (instance of StringBuilder)
      */
     private void createHtmlFileTemplate()  {
         writeToHtml(HTML_TEMPLATE);
     }
 
 
-    /**
-     * Replaces "$FORMULA" with saved formulas in formulaCollector object (instance of StringBuilder)
+    /** Replaces "$FORMULA" with saved formulas in formulaCollector object (instance of StringBuilder)
      */
     private void addFormulasToHtml() {
         String htmlContent = readFromHtml();
-        htmlContent = htmlContent.replace("$FORMULA", formulaCollector.toString());
+        htmlContent = htmlContent.replace("$FORMULA", mathLinesToString());
         writeToHtml(htmlContent);
     }
 
-    /**
+
+    /** Reads HTML file and returns its code
      * @return
+     *          - string representation of HTML code
      */
     private String readFromHtml() {
         StringBuilder sb = new StringBuilder();
@@ -125,13 +137,47 @@ public class MathMLConverter {
         return sb.toString();
     }
 
-    public void addFormula(String formula) {
-        formulaCollector.append("`" + formula + "`" + "\n<br>\n"); // '`' need for JavaScript to recognize the formula
+
+    /** Adds a line to the MathMLConvert. Separates text and math input,
+     * string that contains '=' is considered as a math input
+     * @param line
+     */
+    public void addLine(String line) {
+        if (line.contains("=")) {
+            addMathLine(line);
+        } else {
+            addTextLine(line);
+        }
     }
 
 
-    /**
-     * @param string
+    private void addTextLine(String line) {
+        textLines.addLast(line);
+        lineQueue.addLast(LineType.TEXT);
+    }
+
+
+    private void addMathLine(String line) {
+        mathLines.addLast(line);
+        lineQueue.addLast(LineType.MATH);
+    }
+
+
+    /** Appends all saved math lines to a string. Also adds necessary notation for JavaScript code to work.
+     * @return
+     *          - returns appended string of math lines with proper notation
+     */
+    private String mathLinesToString() {
+        StringBuilder sb = new StringBuilder();
+        for (String line : mathLines) {
+            sb.append("`" + line + "`" + "\n");
+        }
+        return sb.toString();
+    }
+
+
+    /** Writes string to a HTML file.
+     * @param string - to be written to the HTML file
      */
     private void writeToHtml(String string) {
         try {
@@ -141,5 +187,24 @@ public class MathMLConverter {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+
+    /** Returns all lines in the orrder they were added to the MathMLConverter
+     * @return
+     *          - LinkedList<String>
+     */
+    public LinkedList<String> getAllLinesAsList() {
+        LinkedList allLines = new LinkedList();
+        for (LineType lineType : lineQueue) {
+            switch (lineType) {
+                case MATH:
+                    allLines.addLast(mathLines.pop());
+                    break;
+                case TEXT:
+                    allLines.addLast(textLines.pop());
+            }
+        }
+        return allLines;
     }
 }
