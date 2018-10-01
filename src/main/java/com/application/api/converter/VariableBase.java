@@ -5,9 +5,10 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * Meant for storing variables with values in a HashMap
+ * Meant for storing variables with values and units in a HashMap
  * Key - string representation of variable name
  * Value - string representation of the variables value
+ * Unit - string representation of the variables unit
  */
 public class VariableBase {
 

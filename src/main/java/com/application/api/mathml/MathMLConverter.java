@@ -50,7 +50,7 @@ public class MathMLConverter {
     }
 
 
-    /** Converts stored math into MathMLConverter
+    /** Converts stored math expressions into MathML
      */
     public void convert() {
         try {
@@ -63,7 +63,7 @@ public class MathMLConverter {
     }
 
 
-    /** Loads HTML file into web-browser, so that JavaScript will be loaded and MathMLConverter can be extracted
+    /** Loads HTML file into web-browser, so that JavaScript will be loaded and MathML can be extracted
      * @return
      *          - list of MathML code, each entry is math as MathML
      */
@@ -82,7 +82,7 @@ public class MathMLConverter {
     }
 
 
-    /** Extracts MathMLConverter from HTML file
+    /** Extracts MathML from HTML file
      * @param sourceCode
      * @return
      *          - list of MathML code, each entry is math as MathML
@@ -102,14 +102,14 @@ public class MathMLConverter {
     }
 
 
-    /** Create template for replacing "$FORMULA" with collected formulas in formulaCollector (instance of StringBuilder)
+    /** Create template HTML template with "$FORMULA" which will be replaced with saved math expressions
      */
     private void createHtmlFileTemplate()  {
         writeToHtml(HTML_TEMPLATE);
     }
 
 
-    /** Replaces "$FORMULA" with saved formulas in formulaCollector object (instance of StringBuilder)
+    /** Replaces "$FORMULA" with saved math expressions
      */
     private void addFormulasToHtml() {
         String htmlContent = readFromHtml();
@@ -190,7 +190,7 @@ public class MathMLConverter {
     }
 
 
-    /** Returns all lines in the orrder they were added to the MathMLConverter
+    /** Returns all lines in the order they were added to the MathMLConverter
      * @return
      *          - LinkedList<String>
      */

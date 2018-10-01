@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.LinkedList;
 
 
-/** Takes strings as input and outputs them to word by copy-pasting them
+/** Takes strings as input and outputs them to Word by copy-pasting them
  */
 public class WordWriter {
 
@@ -32,8 +32,7 @@ public class WordWriter {
     }
 
 
-    /**
-     *
+    /** Open Word file, inserts each line to clipboard memory and pastes to Word file
      */
     public void write()  {
         if (lines.isEmpty()) return;

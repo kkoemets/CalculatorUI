@@ -3,6 +3,8 @@ package com.application.api.converter;
 import java.util.Arrays;
 
 
+/** Converts variables in mathematical expression to numbers
+ */
 public class Converter {
 
     public String convertString(String string, VariableBase varBase) {
