@@ -9,9 +9,16 @@ import java.util.Map;
  */
 public class Converter {
 
+    private VariableBase varBase;
+    public Converter(VariableBase variableBase) {
+        varBase = variableBase;
+    }
+
     private String[] protectedSymbols = new String[]{
-            "sqrt",
+            "sqrt(",
             "pi()",
+            "min(",
+            "max(",
     };
 
     private Map<String, String> hashedProtectedSymbols = createMapOfProtectedSymbols();
@@ -54,7 +61,7 @@ public class Converter {
     }
 
 
-    public String convertString(String string, VariableBase varBase) {
+    public String convertString(String string) {
         StringBuilder stringBuilder = new StringBuilder(string);
         HashProtectedSymbols(stringBuilder);
         String[] arr = new String[varBase.getLength()];

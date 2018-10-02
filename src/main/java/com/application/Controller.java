@@ -4,8 +4,6 @@ import java.io.*;
 import java.util.Scanner;
 
 import com.application.api.calculator.Calculator;
-import com.application.api.Utils;
-import com.application.api.converter.Converter;
 import com.application.api.converter.VariableBase;
 import com.application.api.mathml.MathMLConverter;
 import com.application.api.mathml.WordMathWriter;
@@ -16,12 +14,10 @@ import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import org.apache.poi.ss.formula.FormulaParseException;
 
 //todo!!! save last save directory
 //todo!!! quick-save file with shortcut  (already opened file)
 //todo!!! NEW API TO COMPARE vars 1 < 2 etc...! urgent
-//TODO!!! CRITICAL BUG!  UNUSED INPUT [QRT(200/651)] AFTER ATTEMPTING TO PARSE THE FORMULA [1+8QRT(200/651)] WITH VARIABLE 'S'
 //todo!!! critical design problem! remake UI
 /**
  * NOTE: Actions for buttons etc. are set in FXML file!
@@ -29,12 +25,8 @@ import org.apache.poi.ss.formula.FormulaParseException;
 public class Controller {
 
 
-    //directories
     private final String DIRECTORY_HELP = "src/main/java/com/application/appdata/help/helpUI.txt";
     private final String DIRECTORY_TEMPLATES = "src/main/java/com/application/appdata/templates/";
-    //
-
-    private Calculator calculator = new Calculator();
 
     Stage primaryStage = Main.getPrimaryStage();
 
@@ -144,71 +136,27 @@ public class Controller {
 
     @FXML
     private void parse() {
-        Converter converter = new Converter(); // converts variables to numbers from variablebase
-        VariableBase variableBase = new VariableBase(); // stores variable names, values and units
         StringBuilder sb = new StringBuilder(); // collects lines to output to output area
+        TextInputParser textInputParser = new TextInputParser(new VariableBase());
         try {
-            // linebreak splits into individual lines to parse
             for (String stringToParse : inputArea.getText().split("\\n")) {
-                if (stringToParse.contains("//")) { // removing possible comments
-                    stringToParse = stringToParse.substring(0, stringToParse.indexOf("//"));
-                }
-                try {
-                    if (stringToParse.equals("") ) { // if line is empty
-                        sb.append("\n");
-                    } else if (stringToParse.substring(0, stringToParse.indexOf(":")).equals("c")) { // if the lines is meant as a comment
-                        // removing syntax and appending to stringbuilder
-                        sb.append(stringToParse.substring(stringToParse.indexOf(":") + 1) + "\n");
-                    } else if (stringToParse.substring(0, stringToParse.indexOf(":")).equals("set")) { // if the lines is meant as a variable setter
-                        stringToParse = Utils.clean(stringToParse);
-                        // parsing variable name
-                        String varName = stringToParse.substring(stringToParse.indexOf(':') + 1, stringToParse.indexOf('='));
-                        // parsing variables value
-                        String value = stringToParse.substring(stringToParse.indexOf('=') + 1, stringToParse.lastIndexOf(','));
-                        // parsing variables unit
-                        String unit = stringToParse.substring(stringToParse.lastIndexOf(',') + 1);
-                        // adding variable to variable base
-                        variableBase.add(varName,value,unit);
-                        // showing result in output area
-                        sb.append(varName + " = " + variableBase.getValue(varName) + ' ' + variableBase.getUnit(varName) + "\n");
-                        //
-                    } else if ((stringToParse.substring(0, 5).equals("calcf") && stringToParse.contains("="))) {
-                        stringToParse = Utils.clean(stringToParse);
-                        // setting decimal place from calcf(x): <-- where x is the parameter
-                        String decimalPlaceNumber = stringToParse.substring(0, stringToParse.indexOf(':'));
-                        calculator.setDecimalPlace(Integer.parseInt(decimalPlaceNumber.substring(decimalPlaceNumber.indexOf('(') + 1, decimalPlaceNumber.indexOf(')'))));
-                        // parsing varname, which is after : and before =
-                        String varName = stringToParse.substring(stringToParse.indexOf(':') + 1, stringToParse.indexOf('='));
-                        // parsing formula (not converted)
-                        String unCalculatedFormula = stringToParse.substring(stringToParse.indexOf('=') + 1, stringToParse.lastIndexOf(','));
-                        // parsing variables unit
-                        String unit = stringToParse.substring(stringToParse.lastIndexOf(',') + 1);
-                        // saving formula
-                        String calculatedFormula = converter.convertString(unCalculatedFormula, variableBase);
-                        // calculating formula and saving to varbase
-                        variableBase.add(varName, calculator.calculate(calculatedFormula), unit);
-                        sb.append(varName + " = " + unCalculatedFormula + " = " + calculatedFormula + " = " + variableBase.getValue(varName) + " " + variableBase.getUnit(varName) + "\n");
-                        //
-                    } else if (stringToParse.substring(0, stringToParse.indexOf(":")).equals("getVars")) {
-                        sb.append("List of saved variables:\n" + variableBase.getVariableBaseListed() + "\n");
-                    } else {
-                        outputArea.setText(sb.toString() + "\nUnknown command");
-                    }
-                } catch (StringIndexOutOfBoundsException e) {
-                    outputArea.setText(sb.toString() + "\nUnknown command");
-                    break;
-                }
+                sb.append(textInputParser.parse(stringToParse) + "\n");
             }
             outputArea.setText(sb.toString());
-        } catch (IOException e) {
-            System.out.println("Looks like there was a problem a problem creating/reading the Excel file. Check the directory\n");
-            outputArea.setText("ERROR 01");
-        } catch (FormulaParseException e) {
+            outputArea.setScrollTop(Double.MAX_VALUE);
+        } catch (IllegalArgumentException e) {
+            sb.append(e.getMessage() + "\n");
+            outputArea.setText(sb.toString());
+            outputArea.setScrollTop(Double.MAX_VALUE);
+        } catch (NullPointerException e) {
+            sb.append(e.getMessage() + "\n");
+            outputArea.setText(sb.toString());
+            outputArea.setScrollTop(Double.MAX_VALUE);
+        } catch (Exception e) {
             e.printStackTrace();
-            outputArea.setText(sb.toString() + "\nCheck for syntax mistakes!");
-        } catch (NumberFormatException e) {
-            e.printStackTrace();
-            outputArea.setText(sb.toString() + "\nIncorrect variable declaration");
+            sb.append(e.getMessage() + "\n");
+            outputArea.setText(sb.toString());
+            outputArea.setScrollTop(Double.MAX_VALUE);
         }
     }
 

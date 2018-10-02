@@ -1,0 +1,75 @@
+c:Posti pikijõu ekstsentrilisuse leidmine
+
+c:Postile mõjuv survejõud
+set: N_(Ed) = -, kN
+c:Pikijõu ekstsentrilisus
+set: e_0 = -, mm
+c:Betoon normatiivne survetugevus
+set: f_(ck) = -, MPa
+c:Kaitsekihi paksus
+set: c = -, mm
+c:Betooni arvutuslik survetugevus
+calcf(1): f_(cd) = f_(ck)/1.5, MPa
+c:Posti pikkus
+set: l= -, m
+c:Posti paksus (selles suunas on jõud ekstsentriline)
+set: t = -, m
+c:Posti laius
+set: h = -, m
+c:Nõtketegur - liigendid otstes
+set: μ = -,
+c:Posti arvutuspikkus
+calcf(1): l_0 = μ*l, m
+c:Baasväärtus
+calcf(3): θ_0 = 1/200,
+c:Pikkust arvestav vähendustegur
+set: α_h = 1,
+c:Elementide arvu arvestav vähendustegur
+set: α_m = 1,
+c:Konstruktsioonihälve
+calcf(3): θ_i = θ_0*α_h*α_m,
+c:Lisaekstsentrilisus
+calcf(1): e_i = (θ_i*l_0)/2*10^3, mm
+c:Posti ristlõikeinertsimoment
+calcf(7): I = (t^3*h)/12, m
+c:Posti ristlõikepindala
+calcf(3): A = t*h, m^2
+c:Posti intertsiraadius
+calcf(4): i = sqrt(I/A), m
+c:Posti saledus
+calcf(1): λ=l_0/i,
+c:2. järku ekstsentrilisus on vaja arvesse võtta, kui λ>λ_(lim)
+calcf(4): A_c = A, m
+calcf(3): n = N_(Ed)/(A_c*f_(cd))*10^-3,
+c:Piirsaledus
+calcf(1): λ_(lim) = 10.8/sqrt(n),								// edasi minna juhul, kui on ületatud
+
+c:Valin armatuuriks
+set: dia_s = -, mm
+set: n_s = -, tk
+calcf(0): d = t*10^3 - c - (dia_s)/2, mm
+set: f_(yd) = -, MPa
+calcf(0): A_s = n_s*pi()*(dia_s)^2/4, (mm)^2
+calcf(3): ω = (A_s*f_(yd))/(A_c*f_(cd))*10^-6,
+calcf(3): n_u = 1 + ω,
+set: n_(bal) = 0.4,
+calcf(3): K_r = (n_u - n)/(n_u-n_(bal)), // <=1
+calcf(3): K_r=min(K_r,1),
+calcf(3): β = 0.35+f_(ck)/200 - λ/150,
+
+c:Betooni tegeliku roometeguri φ_ef võtame võrdseks lõpliku roometeguriga φ(∞;t_0), mille määrame EVS-EN 2.1.1 jooniselt 3.1
+c:Selle tabeli kasutamiseks vajalik abisuurus h_0
+calcf(3):  h_0 = (2*A_c)/(2*(t+h)), mm
+c:Võttes betooni vanuseks koormamisel 1 kuu, saame eelnimetatud jooniselt:
+set: φ_(ef)=-,
+c:Seega, betooni roomet arvestav tegur
+calcf(2): K_φ = 1+β*φ_(ef),
+calcf(2): K_φ = max(K_φ, 1),
+set: E_s = 200, GPa
+calcf(4): 1/r_0 = f_(yd)/(E_s*10^3*0.45*d*10^-3), m^(-1)
+calcf(4): 1/r = K_r*K_φ*1/r_0, m^(-1)
+c:2. järku ekstsentrilisus
+calcf(1): e_2 = l_0^2/(pi())^2*1/r*10^3, mm
+c:Üldine ekstsentrilisus(mitte väiksem kui h/30 ja 20 mm)
+calcf(1): e_(sum) = e_0 + e_i + e_2, mm
+calcf(1):e_(sum) = max(h*10^3/20, e_(sum), 20), mm
