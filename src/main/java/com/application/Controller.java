@@ -8,7 +8,7 @@ import com.application.api.Utils;
 import com.application.api.converter.Converter;
 import com.application.api.converter.VariableBase;
 import com.application.api.mathml.MathMLConverter;
-import com.application.api.mathml.WordWriter;
+import com.application.api.mathml.WordMathWriter;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -221,11 +221,15 @@ public class Controller {
             converter.addLine(line);
         }
         converter.convert();
-        WordWriter wordWriter = new WordWriter();
+        WordMathWriter wordMathWriter = new WordMathWriter();
         for (String line : converter.getAllLinesAsList()) {
-            wordWriter.addLine(line);
+            wordMathWriter.addLine(line);
         }
-        wordWriter.write();
+        try {
+            wordMathWriter.write();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 

@@ -20,11 +20,15 @@ class MathMLConverterTest {
         converter.addLine("f_(cd)=a+b");
         converter.convert();
         LinkedList<String> lines = converter.getAllLinesAsList();
-        WordWriter wordWriter = new WordWriter();
+        WordMathWriter wordMathWriter = new WordMathWriter();
         for (String line : lines) {
-            wordWriter.addLine(line);
+            wordMathWriter.addLine(line);
         }
-        wordWriter.write();
+        try {
+            wordMathWriter.write();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }
