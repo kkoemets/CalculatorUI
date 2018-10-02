@@ -21,4 +21,11 @@ class ConverterTest {
 
     }
 
+    @Test
+    void convertString() {
+        Converter converter = new Converter();
+        VariableBase variableBase = new VariableBase();
+        String result = converter.convertString("pi()", variableBase);
+        System.out.println(result);
+    }
 }

@@ -7,23 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97522e40-3d5e-4790-9049-98bf005c29e0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MML2OMML.XSL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/WordMathWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/application/ParserImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/application/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/poi-generated-file.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/calculator/poi-generated-file.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathJax-master/mathml.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathJax-master/mathml.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/application/api/mathml/WordWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/application/api/mathml/MathMLConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/application/api/mathml/MathMLConverterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/calculator/poi-generated-file.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/calculator/poi-generated-file.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/converter/Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/converter/Converter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/converter/VariableBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/converter/VariableBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/MathMLConverter.docx" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/application/api/mathml/MathMLConverter.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/application/api/mathml/WordWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/application/api/mathml/MathMLConverterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/application/api/mathml/MathMLConverterTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/application/api/converter/ConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/application/api/converter/ConverterTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,59 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CalculatorImplExcel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/calculator/CalculatorImplExcel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WordMathWriter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/WordMathWriter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-79">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1226#1227#0" expanded="true" />
-                <element signature="e#1268#1269#0" expanded="true" />
-                <element signature="e#3230#3231#0" expanded="true" />
-                <element signature="e#3258#3259#0" expanded="true" />
-                <element signature="e#3299#3300#0" expanded="true" />
-                <element signature="e#3334#3335#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="230" column="12" selection-start-line="230" selection-start-column="12" selection-end-line="230" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MathMLConverterTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/application/api/mathml/MathMLConverterTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="282">
+              <caret line="153" column="92" lean-forward="true" selection-start-line="153" selection-start-column="92" selection-end-line="153" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -101,8 +44,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -110,6 +53,7 @@
     <findStrings>
       <find>sca</find>
       <find>System</find>
+      <find>todo!!! critical bug!  Unused input [qrt(200/651)] after attempting to parse the formula [1+8qrt(200/651)] with variable 's'</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,7 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/application/api/converter/ConverterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/mathml/MathML.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathML.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/mathml/Word.java" />
@@ -142,13 +85,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/calculator/CalculatorImplExcel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/converter/VariableBase.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/application/Controller.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/application/api/mathml/MathMLConverterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/mathml/WordWriter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/application/api/mathml/WordMathWriter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/application/api/converter/ConverterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java" />
       </list>
     </option>
   </component>
@@ -236,7 +180,7 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="mathml" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -259,8 +203,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.application.api.mathml" />
       <recent name="com.application.api.converter" />
+      <recent name="com.application.api.mathml" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Kristjan\Google Drive\Varia\Programming\Java\Projects\CalculatorUI\src\main\java\com\application\api\mathml" />
@@ -306,19 +250,54 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="WordFileWriter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.application.api.mathml.WordFileWriter" />
-      <module name="CalculatorUI" />
+    <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="ConverterTest.convertString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CalculatorUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.application.api.mathml.*" />
+          <option name="PATTERN" value="com.application.api.converter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.application.api.converter" />
+      <option name="MAIN_CLASS_NAME" value="com.application.api.converter.ConverterTest" />
+      <option name="METHOD_NAME" value="convertString" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration name="ConverterTest.setup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CalculatorUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.application.api.converter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.application.api.converter" />
+      <option name="MAIN_CLASS_NAME" value="com.application.api.converter.ConverterTest" />
+      <option name="METHOD_NAME" value="setup" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="MathMLConverterTest.test_funcionality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CalculatorUI" />
@@ -357,29 +336,6 @@
       <option name="MAIN_CLASS_NAME" value="com.application.api.mathml.WordFileWriterTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="WordFileWriterTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CalculatorUI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.application.api.mathml.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.application.api.mathml" />
-      <option name="MAIN_CLASS_NAME" value="com.application.api.mathml.WordFileWriterTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -429,18 +385,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.WordFileWriter" />
-      <item itemvalue="JUnit.WordFileWriterTest.test" />
       <item itemvalue="JUnit.WordFileWriterTest" />
       <item itemvalue="JUnit.MathMLConverterTest.test_funcionality" />
+      <item itemvalue="JUnit.ConverterTest.setup" />
+      <item itemvalue="JUnit.ConverterTest.convertString" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ConverterTest.convertString" />
+        <item itemvalue="JUnit.ConverterTest.setup" />
         <item itemvalue="JUnit.MathMLConverterTest.test_funcionality" />
         <item itemvalue="JUnit.WordFileWriterTest" />
-        <item itemvalue="JUnit.WordFileWriterTest.test" />
-        <item itemvalue="Application.WordFileWriter" />
       </list>
     </recent_temporary>
   </component>
@@ -458,39 +414,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MathConverterTest_test_funcionality - 2018.09.30 at 16h 57m 04s.xml">
-      <configuration name="MathConverterTest.test_funcionality" configurationId="JUnit" />
+    <history-entry file="ConverterTest_convertString - 2018.10.02 at 14h 24m 51s.xml">
+      <configuration name="ConverterTest.convertString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathConverterTest_test_funcionality - 2018.09.30 at 16h 58m 57s.xml">
-      <configuration name="MathConverterTest.test_funcionality" configurationId="JUnit" />
+    <history-entry file="ConverterTest_convertString - 2018.10.02 at 14h 25m 03s.xml">
+      <configuration name="ConverterTest.convertString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathConverterTest_test_funcionality - 2018.09.30 at 17h 56m 06s.xml">
-      <configuration name="MathConverterTest.test_funcionality" configurationId="JUnit" />
+    <history-entry file="ConverterTest_convertString - 2018.10.02 at 14h 25m 17s.xml">
+      <configuration name="ConverterTest.convertString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathConverterTest_test_funcionality - 2018.09.30 at 17h 57m 50s.xml">
-      <configuration name="MathConverterTest.test_funcionality" configurationId="JUnit" />
+    <history-entry file="ConverterTest_convertString - 2018.10.02 at 14h 25m 30s.xml">
+      <configuration name="ConverterTest.convertString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathConverterTest_test_funcionality - 2018.09.30 at 17h 58m 56s.xml">
-      <configuration name="MathConverterTest.test_funcionality" configurationId="JUnit" />
+    <history-entry file="ConverterTest_convertString - 2018.10.02 at 14h 26m 17s.xml">
+      <configuration name="ConverterTest.convertString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathConverterTest_test_funcionality - 2018.09.30 at 17h 59m 28s.xml">
-      <configuration name="MathConverterTest.test_funcionality" configurationId="JUnit" />
+    <history-entry file="ConverterTest_convertString - 2018.10.02 at 14h 26m 34s.xml">
+      <configuration name="ConverterTest.convertString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathConverterTest_test_funcionality - 2018.09.30 at 18h 00m 42s.xml">
-      <configuration name="MathConverterTest.test_funcionality" configurationId="JUnit" />
+    <history-entry file="ConverterTest_convertString - 2018.10.02 at 14h 26m 48s.xml">
+      <configuration name="ConverterTest.convertString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathConverterTest_test_funcionality - 2018.09.30 at 18h 01m 11s.xml">
-      <configuration name="MathConverterTest.test_funcionality" configurationId="JUnit" />
+    <history-entry file="ConverterTest_convertString - 2018.10.02 at 14h 27m 53s.xml">
+      <configuration name="ConverterTest.convertString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathConverterTest_test_funcionality - 2018.09.30 at 18h 01m 26s.xml">
-      <configuration name="MathConverterTest.test_funcionality" configurationId="JUnit" />
+    <history-entry file="ConverterTest_convertString - 2018.10.02 at 14h 28m 43s.xml">
+      <configuration name="ConverterTest.convertString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathConverterTest_test_funcionality - 2018.09.30 at 18h 09m 29s.xml">
-      <configuration name="MathConverterTest.test_funcionality" configurationId="JUnit" />
+    <history-entry file="ConverterTest_convertString - 2018.10.02 at 14h 28m 54s.xml">
+      <configuration name="ConverterTest.convertString" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
@@ -506,7 +462,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" x="-574" y="215" width="439" height="631" id="Project" order="0" type="WINDOWED" visible="true" weight="0.1546875" />
+      <window_info active="true" content_ui="combo" x="-1144" y="166" width="439" height="631" id="Project" order="0" type="WINDOWED" visible="true" weight="0.1546875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
@@ -532,8 +488,14 @@
           <line>14</line>
           <properties />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -689,13 +651,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/application/api/converter/ConverterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/MathMLConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -784,27 +739,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/VariableBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/calculator/CalculatorImplExcel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -820,20 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="230" column="12" selection-start-line="230" selection-start-column="12" selection-end-line="230" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/application/api/mathml/MathMLConverterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -843,8 +767,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/mathml/WordMathWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="680">
+          <caret line="40" column="7" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1226#1227#0" expanded="true" />
@@ -854,6 +778,61 @@
             <element signature="e#3299#3300#0" expanded="true" />
             <element signature="e#3334#3335#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/calculator/CalculatorImplExcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/appdata/settings/last-saved-file-directory.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/ParserImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/application/api/converter/ConverterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/api/converter/Converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/application/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="153" column="92" lean-forward="true" selection-start-line="153" selection-start-column="92" selection-end-line="153" selection-end-column="92" />
         </state>
       </provider>
     </entry>
@@ -881,7 +860,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -941,7 +920,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Maven: org.apache.httpcomponents:httpcore:4.4.9</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

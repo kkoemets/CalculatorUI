@@ -21,7 +21,7 @@ import org.apache.poi.ss.formula.FormulaParseException;
 //todo!!! save last save directory
 //todo!!! quick-save file with shortcut  (already opened file)
 //todo!!! NEW API TO COMPARE vars 1 < 2 etc...! urgent
-//todo!!! critical bug!  Unused input [qrt(200/651)] after attempting to parse the formula [1+8qrt(200/651)] with variable 's'
+//TODO!!! CRITICAL BUG!  UNUSED INPUT [QRT(200/651)] AFTER ATTEMPTING TO PARSE THE FORMULA [1+8QRT(200/651)] WITH VARIABLE 'S'
 //todo!!! critical design problem! remake UI
 /**
  * NOTE: Actions for buttons etc. are set in FXML file!
