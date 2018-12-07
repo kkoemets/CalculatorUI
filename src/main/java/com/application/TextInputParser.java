@@ -14,7 +14,7 @@ import java.util.Map;
  */
 public class TextInputParser extends Converter {
 
-    private Map<String, Action> actionMap = createActionMap();
+    private Map<String, Command> commandMap = createActionMap();
     private VariableBase variableBase;
     private Calculator calculator = new Calculator();
 
@@ -23,36 +23,39 @@ public class TextInputParser extends Converter {
         this.variableBase = variableBase;
     }
 
-    enum Action {
+    enum Command {
         MATH,
         COMMENT,
         VARIABLE
     }
 
-    private Map<String, Action> createActionMap() {
-        Map<String, Action> actionMap = new HashMap<>();
-        actionMap.put("set", Action.VARIABLE);
-        actionMap.put("c", Action.COMMENT);
-        actionMap.put("calcf", Action.MATH);
-        return actionMap;
+    /** Map for maintainability of possible Commands
+     * @return
+     */
+    private Map<String, Command> createActionMap() {
+        Map<String, Command> commandMap = new HashMap<>();
+        commandMap.put("set", Command.VARIABLE);
+        commandMap.put("c:", Command.COMMENT); // colon must be included, findCommand() won't work otherwise
+        commandMap.put("calcf", Command.MATH);
+        return commandMap;
     }
 
 
-    /** Finds command in argument string and returns corresponding enum Action value.
+    /** Finds command in argument string and returns corresponding enum Command value.
      * @param string
      * @return
-     *          - Action
-     * @throws IllegalArgumentException if is not possible to determine Action in the string
+     *          - Command
+     * @throws IllegalArgumentException if is not possible to determine Command in the string
      */
-    private Action findAction(String string) throws IllegalArgumentException {
-        for (String command : actionMap.keySet()) {
+    private Command findCommand(String string) throws IllegalArgumentException {
+        for (String command : commandMap.keySet()) {
             int n;
             if ((n = command.length()) > string.length()) continue;
             if (string.substring(0, n).equals(command)) {
-                return actionMap.get(command);
+                return commandMap.get(command);
             }
         }
-        throw new IllegalArgumentException(string + " no command found!");
+        throw new IllegalArgumentException(string + " <<< no command found!");
     }
 
 
@@ -68,7 +71,7 @@ public class TextInputParser extends Converter {
     }
 
 
-    /** Main method of TextInputParser.
+    /** Main functionality of TextInputParser.
      * @param string
      *                - to be parsed
      * @return
@@ -79,8 +82,8 @@ public class TextInputParser extends Converter {
     public String parse(String string) throws IllegalArgumentException, NullPointerException {
         if (string == null) throw new NullPointerException(string);
         if (string.length() < 1) return "";
-        Action action = findAction(string);
-        switch (action)  {
+        Command command = findCommand(string);
+        switch (command)  {
             case MATH:
                 string = Utils.clean(string);
                 string = removeComments(string);
@@ -99,21 +102,21 @@ public class TextInputParser extends Converter {
 
     private int indexOfColon(String string) {
         int colonIndex;
-        if ((colonIndex = string.indexOf(":")) == -1) throw new IllegalArgumentException(string + " does not contain colon (':') sign.");
+        if ((colonIndex = string.indexOf(":")) == -1) throw new IllegalArgumentException(string + " <<< does not contain colon (':') sign.");
         return colonIndex;
     }
 
 
     private int indexOfComa(String string) {
         int comaIndex;
-        if ((comaIndex = string.lastIndexOf(",")) == -1) throw new IllegalArgumentException(string + " does not have coma separator for identifying math equation answer unit.");
+        if ((comaIndex = string.lastIndexOf(",")) == -1) throw new IllegalArgumentException(string + " <<< does not have coma separator for identifying math equation answer unit.");
         return comaIndex;
     }
 
 
     private int indexOfEquals(String string) {
         int equalsIndex;
-        if ((equalsIndex = string.lastIndexOf("=")) == -1) throw new IllegalArgumentException(string + " does not contain equals ('=') sign.");
+        if ((equalsIndex = string.lastIndexOf("=")) == -1) throw new IllegalArgumentException(string + " <<< does not contain equals ('=') sign.");
         return equalsIndex;
     }
 
@@ -127,7 +130,7 @@ public class TextInputParser extends Converter {
      */
     private String findVariableName(String string, int indexOfColon, int indexOfEquals) {
         String variableName;
-        if ((variableName = string.substring(indexOfColon + 1, indexOfEquals)).isEmpty()) throw new IllegalArgumentException (string + " does not contain variable name");
+        if ((variableName = string.substring(indexOfColon + 1, indexOfEquals)).isEmpty()) throw new IllegalArgumentException (string + " <<< does not contain variable name.");
         return variableName;
     }
 
@@ -141,7 +144,7 @@ public class TextInputParser extends Converter {
      */
     private String findArithmetic(String string, int indexOfEquals, int indexOfComa) {
         String arithmetic;
-        if ((arithmetic = string.substring(indexOfEquals + 1, indexOfComa)).isEmpty()) throw new IllegalArgumentException (string + " does not contain mathematical expression");
+        if ((arithmetic = string.substring(indexOfEquals + 1, indexOfComa)).isEmpty()) throw new IllegalArgumentException (string + " <<< does not contain mathematical expression.");
         return arithmetic;
     }
 
@@ -164,7 +167,7 @@ public class TextInputParser extends Converter {
      */
     private String parseMath(String string) throws IllegalArgumentException {
         String[] arr = addToVariableBase(string);
-        return arr[0] + "=" + arr[1] + "=" + arr[2] + "=" + arr[3] + ", " + arr[4];
+        return arr[0] + "=" + arr[1] + "=" + arr[2] + "=" + arr[3] + " " + arr[4];
     }
 
 
@@ -174,11 +177,11 @@ public class TextInputParser extends Converter {
      */
     private String parseVariable(String string) {
         String[] arr = addToVariableBase(string);
-        return arr[0] + "=" + arr[1] + ", " + arr[4];
+        return arr[0] + "=" + arr[1] + " " + arr[4];
     }
 
 
-    /** Parses string in case of ACTION.VARIABLE or ACTION.MATH and new variable to variable base
+    /** Parses string in case of Command.VARIABLE or Command.MATH and adds new variable to variable base
      * @param string
      * @return
      *          - String array length of 5
@@ -191,15 +194,16 @@ public class TextInputParser extends Converter {
      */
     private String[] addToVariableBase(String string) throws IllegalArgumentException {
         calculator.setDecimalPlace(2);
-        int comaIndex = indexOfComa(string);
-        int equalsIndex = indexOfEquals(string);
         int colonIndex = indexOfColon(string);
+        int equalsIndex = indexOfEquals(string);
+        int comaIndex = indexOfComa(string);
         String variableName = findVariableName(string, colonIndex, equalsIndex);
         String arithmetic = findArithmetic(string, equalsIndex, comaIndex);
         String unit = findUnit(string, comaIndex);
         String calculations = super.convertString(arithmetic);
         String result;
-        if (findAction(string) == Action.MATH) {
+        Command command;
+        if ((command = findCommand(string)) == Command.MATH) {
             int indexOfParenthisis = colonIndex-1;
             String subString = string.substring(0, indexOfParenthisis);
             String decimalPlace = subString.substring(subString.indexOf('(') + 1);
@@ -211,7 +215,11 @@ public class TextInputParser extends Converter {
             e.printStackTrace();
             throw new IllegalArgumentException(e.getMessage());
         }
-        variableBase.add(variableName, result, unit);
+        if (command == Command.VARIABLE) {
+            variableBase.add(variableName, arithmetic, unit);
+        } else {
+            variableBase.add(variableName, result, unit);
+        }
         return new String[]{variableName, arithmetic, calculations, result, unit};
     }
 
