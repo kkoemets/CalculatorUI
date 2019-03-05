@@ -24,9 +24,6 @@ import java.util.LinkedList;
  */
 public class WordMathWriter {
 
-
-
-    private final String DIRECTORY_DOCX_FILE = "./MathMLConverter.docx";
     private static final String DIRECTORY_XSL_FILE = "MML2OMML.XSL";
 
     private LinkedList<String> lines; // Lines to be copy pasted to Word file
@@ -79,10 +76,9 @@ public class WordMathWriter {
      * @throws Exception
      */
     private CTOMath getOMML(String mathML) throws Exception {
-        File stylesheet = getFile(DIRECTORY_XSL_FILE);
 
         TransformerFactory tFactory = TransformerFactory.newInstance();
-        StreamSource stylesource = new StreamSource(stylesheet);
+        StreamSource stylesource = new StreamSource(getFile(DIRECTORY_XSL_FILE));
 
         Transformer transformer = tFactory.newTransformer(stylesource);
 
@@ -122,10 +118,9 @@ public class WordMathWriter {
         lines.addLast(line);
     }
 
-    private File getFile(String directoryResources) {
+    private InputStream getFile(String directoryResources) {
         // Get file from resources folder
         ClassLoader classLoader = getClass().getClassLoader();
-        File file = new File(classLoader.getResource(directoryResources).getFile());
-        return new File(file.getAbsoluteFile().toString().replace("%20", " "));
+        return classLoader.getSystemResourceAsStream(directoryResources);
     }
 }

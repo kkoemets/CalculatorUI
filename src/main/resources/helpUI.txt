@@ -1,16 +1,25 @@
 Commands
 ---------------------
-Write a calculation and calculate. It allowed to you already
-set variables in equation with numbers. Results is added to variable base.
-    calcf(n): <variable name>=<equation>, <unit>
-                  - n is decimal precision
+Write a calculation and calculate. It allows you to used set variables instead of numbers.
+Results is saved with corresponding variable name
+    calcf(n): 'variable_name'='equation', 'unit'
+          - n is decimal precision
 ---
 Add a variable to variable base
-    set: <variable name>=<variable value>, <unit>
+    set: 'variable_name'= 'variable_value', 'unit'
 ---
 Output a text line.
-    c: <text>
----
-Output all current variables stored in variable base.
-    getVars:
----
+    c: 'text'
+---------------------
+
+
+EXAMPLE
+---------------------
+c:Setting variable 'a'
+set: a = 10, Pa
+c:Setting variable 'b'
+set: b = 10, Pa
+c:Calculating variable 'c', which will be also saved
+calcf(2): c = a + b, Pa
+calcf(2): d = c + 1, Pa
+---------------------

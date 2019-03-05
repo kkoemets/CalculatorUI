@@ -18,6 +18,7 @@ import javafx.scene.control.*;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import org.apache.poi.ss.formula.FormulaParseException;
 import org.w3c.dom.Document;
 
 import static com.joller.calculationparser.Command.*;
@@ -29,16 +30,12 @@ public class Controller {
 
 
     private final String DIRECTORY_HELP = "/helpUI.txt";
-    private final String DIRECTORY_TEMPLATES = "/appdata/templates/";
 
     Stage primaryStage = Main.getPrimaryStage();
 
     private FileChooser fileOpener;
     private FileChooser fileSaver;
     private SimpleObjectProperty<File> lastKnownDirectoryProperty = new SimpleObjectProperty<>();
-
-    @FXML
-    private MenuButton templateMenu;
 
     @FXML
     private TextArea outputArea;
@@ -53,7 +50,6 @@ public class Controller {
     @FXML
     void initialize() {
         outputArea.setEditable(false);
-        initializeTemplateMenu();
         initializeInstructionsTextAndAlert();
         initializeTextFileOpener();
         initializeTextFileSaver();
@@ -93,7 +89,6 @@ public class Controller {
         }
         alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Instructions");
-        alert.setHeaderText("Below are commands for creating calculations");
         alert.setContentText(collect.toString());
     }
 
@@ -104,43 +99,63 @@ public class Controller {
     }
 
 
-    private void initializeTemplateMenu() {
+    @FXML
+    private void openFile() {
+        File file = fileOpener.showOpenDialog((primaryStage));
+        try {
+            if (file != null) {
+                saveLastKnownDirectory(file);
+                String savedText = readFile(file);
+                displayFileInInputArea(savedText);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-//        templateMenu.setTextAlignment(TextAlignment.CENTER);
-//        File folder = new File(DIRECTORY_TEMPLATES);
-//        // getting templates
-//        File[] listOfTemplates = folder.listFiles();
-//        // adding items to MenuButton
-//        for (File file : listOfTemplates) {
-//            String f = file.getPath();
-//            // name of a menu item will be .txt files name
-//            f = f.substring(f.lastIndexOf("\\") + 1, f.lastIndexOf("."));
-//            MenuItem menuItem = new MenuItem(f);
-//            final String templateName = f + ".txt"; // setOnAction requires final variables
-//            // creating action when menu item is pressed
-//            // main objective is to copy text from template file to input area
-//            menuItem.setOnAction(event -> {
-//                File template = new File(DIRECTORY_TEMPLATES + templateName);
-//                try {
-//                    Scanner scanner = new Scanner(template);
-//                    StringBuilder collect = new StringBuilder();
-//                    while (scanner.hasNextLine()) {
-//                        collect.append(scanner.nextLine() + "\n");
-//                    }
-//                    inputArea.setText(collect.toString());
-//
-//                } catch (FileNotFoundException e) {
-//                    e.printStackTrace();
-//                }
-//            });
-//            templateMenu.getItems().add(menuItem);
-//        }
+    private String readFile(File file) throws IOException {
+        StringBuilder stringBuilder = new StringBuilder();
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+        String line;
+        while ((line = bufferedReader.readLine()) != null) {
+            stringBuilder.append(line + "\n");
+        }
+        bufferedReader.close();
+        return stringBuilder.toString();
+    }
+    private void displayFileInInputArea(String string) {
+        inputArea.clear();
+        inputArea.setText(string);
+    }
+
+    @FXML
+    private void saveFile() {
+        try {
+            File file = fileSaver.showSaveDialog(primaryStage);
+            if (file != null) {
+                saveLastKnownDirectory(file);
+                String text = inputArea.getText();
+                FileWriter fileWriter = new FileWriter(file);
+                fileWriter.write(text);
+                fileWriter.close();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void saveLastKnownDirectory(File file) {
+        lastKnownDirectoryProperty.setValue(file.getParentFile());
+        fileLocationText.setText(file.getAbsolutePath());
     }
 
     Queue<Command> commandQueue = new LinkedList<>();
 
+    boolean isMathMLParsingAllowed = false;
+
     @FXML
     private void parse() {
+        isMathMLParsingAllowed = false;
         StringBuilder output = new StringBuilder(); // collects lines to output to output area
         Converter converter = new Converter();
         Calculator calculator = new Calculator();
@@ -190,12 +205,13 @@ public class Controller {
             }
             outputArea.setText(output.toString());
             outputArea.setScrollTop(Double.MAX_VALUE);
+            isMathMLParsingAllowed = true;
         } catch (IllegalArgumentException e) {
             output.append(e.getMessage() + "\n");
             outputArea.setText(output.toString());
             outputArea.setScrollTop(Double.MAX_VALUE);
-        } catch (NullPointerException e) {
-            output.append(e.getMessage() + "\n");
+        } catch (FormulaParseException e) {
+            output.append("Trying to calculate with unknown variable, check this line!\n");
             outputArea.setText(output.toString());
             outputArea.setScrollTop(Double.MAX_VALUE);
         } catch (Exception e) {
@@ -208,82 +224,39 @@ public class Controller {
 
     @FXML
     public void formulasToMathMLToWord() {
-
-        String lines = outputArea.getText();
-        if (lines == null || lines.length() < 1) return;
-
-        final AsciiMathParser mathParser = new AsciiMathParser();
-        List<String> list = new ArrayList<>();
-
-        for (String line : lines.split("\\n")) {
-            if (commandQueue.poll() == COMMENT) {
-                list.add(line);
-            } else {
-                Document result = mathParser.parseAsciiMath(line);
-                list.add(XmlUtilities.serializeMathmlDocument(result));
-            }
-        }
-
-        WordMathWriter wordMathWriter = new WordMathWriter();
-        for (String line : list) {
-            wordMathWriter.addLine(line);
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+        if (!isMathMLParsingAllowed) {
+            alert.setTitle("Warning Dialog");
+            alert.setContentText("Cannot parse your calculations to Word!" +
+                    "\nHave you fixed errors in your calculations?");
+            alert.showAndWait();
         }
         try {
+            String lines = outputArea.getText();
+            if (lines == null || lines.length() < 1) return;
+
+            final AsciiMathParser mathParser = new AsciiMathParser();
+            List<String> list = new ArrayList<>();
+
+            for (String line : lines.split("\\n")) {
+                if (commandQueue.poll() == COMMENT) {
+                    list.add(line);
+                } else {
+                    Document result = mathParser.parseAsciiMath(line);
+                    list.add(XmlUtilities.serializeMathmlDocument(result));
+                }
+            }
+
+            WordMathWriter wordMathWriter = new WordMathWriter();
+            for (String line : list) {
+                wordMathWriter.addLine(line);
+            }
+
             wordMathWriter.write();
         } catch (Exception e) {
-            e.printStackTrace();
+            alert.setTitle("Oops... something went wrong!"
+            + "\n" + e.getMessage());
         }
     }
 
-
-    @FXML
-    private void openFile() {
-        File file = fileOpener.showOpenDialog((primaryStage));
-        try {
-            if (file != null) {
-                saveLastKnownDirectory(file);
-                String savedText = readFile(file);
-                displayFileInInputArea(savedText);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-    private String readFile(File file) throws IOException {
-        StringBuilder stringBuilder = new StringBuilder();
-        BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
-        String line;
-        while ((line = bufferedReader.readLine()) != null) {
-            stringBuilder.append(line + "\n");
-        }
-        bufferedReader.close();
-        return stringBuilder.toString();
-    }
-    private void displayFileInInputArea(String string) {
-        inputArea.clear();
-        inputArea.setText(string);
-    }
-
-
-    @FXML
-    private void saveFile() {
-        try {
-            File file = fileSaver.showSaveDialog(primaryStage);
-            if (file != null) {
-                saveLastKnownDirectory(file);
-                String text = inputArea.getText();
-                FileWriter fileWriter = new FileWriter(file);
-                fileWriter.write(text);
-                fileWriter.close();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-
-    public void saveLastKnownDirectory(File file) {
-        lastKnownDirectoryProperty.setValue(file.getParentFile());
-        fileLocationText.setText(file.getAbsolutePath());
-    }
 }

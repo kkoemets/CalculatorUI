@@ -3,7 +3,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextArea?>
@@ -24,10 +23,6 @@
                            <children>
                               <Button layoutX="-3.0" layoutY="262.0" mnemonicParsing="false" onAction="#saveFile" prefHeight="59.0" prefWidth="212.0" text="Save calculations" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
                               <Button layoutY="329.0" mnemonicParsing="false" onAction="#openFile" prefHeight="59.0" prefWidth="234.0" text="Load calculations" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="69.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
-                              <MenuButton fx:id="templateMenu" layoutX="2.0" layoutY="38.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="234.0" text="Templates" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
-                                <items>
-                                </items>
-                              </MenuButton>
                            </children>
                         </AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="447.0" prefWidth="256.0">
