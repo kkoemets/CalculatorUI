@@ -1,6 +1,7 @@
 package com.joller;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
@@ -61,6 +62,7 @@ public class Controller {
     void initializeTextFileOpener() {
         fileOpener = new FileChooser();
         fileOpener.initialDirectoryProperty().bindBidirectional(lastKnownDirectoryProperty);
+
         fileOpener.setTitle("Open Saved Calculations");
         // setting to open only .txt files
         fileOpener.getExtensionFilters().add(new FileChooser.ExtensionFilter("Normal text file","*.txt"));
@@ -116,7 +118,8 @@ public class Controller {
 
     private String readFile(File file) throws IOException {
         StringBuilder stringBuilder = new StringBuilder();
-        BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+        BufferedReader bufferedReader = new BufferedReader(
+                new InputStreamReader(new FileInputStream(file), StandardCharsets.UTF_8));
         String line;
         while ((line = bufferedReader.readLine()) != null) {
             stringBuilder.append(line + "\n");
@@ -136,9 +139,10 @@ public class Controller {
             if (file != null) {
                 saveLastKnownDirectory(file);
                 String text = inputArea.getText();
-                FileWriter fileWriter = new FileWriter(file);
-                fileWriter.write(text);
-                fileWriter.close();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(
+                        new FileOutputStream(file), StandardCharsets.UTF_8));
+                bufferedWriter.write(text);
+                bufferedWriter.close();
             }
         } catch (IOException e) {
             e.printStackTrace();
