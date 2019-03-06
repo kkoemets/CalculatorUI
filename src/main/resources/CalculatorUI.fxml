@@ -57,7 +57,7 @@
                         <KeyCodeCombination alt="UP" code="S" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
                      </accelerator>
                   </MenuItem>
-                  <MenuItem mnemonicParsing="false" onAction="#formulasToMathMLToWord" text="MathML" />
+                  <MenuItem mnemonicParsing="false" onAction="#formulasToMathMLToWord" text="Create Word" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">

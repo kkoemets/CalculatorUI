@@ -2,14 +2,14 @@ package com.joller;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
 import com.joller.asciitomathml.AsciiMathParser;
 import com.joller.asciitomathml.XmlUtilities;
-import com.joller.calculationparser.Command;
-import com.joller.calculationparser.Converter;
+import com.joller.calculationparser.Parser;
+
+import com.joller.calculationparser.converter.Command;
 import com.joller.calculator.Calculator;
 import com.joller.mathmltoword.WordMathWriter;
 import javafx.beans.property.SimpleObjectProperty;
@@ -18,10 +18,10 @@ import javafx.scene.control.*;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import org.apache.poi.ss.formula.FormulaParseException;
 import org.w3c.dom.Document;
 
-import static com.joller.calculationparser.Command.*;
+import static com.joller.calculationparser.converter.Command.COMMENT;
+
 
 /**
  * NOTE: Actions for buttons etc. are set in FXML file!
@@ -36,6 +36,7 @@ public class Controller {
     private FileChooser fileOpener;
     private FileChooser fileSaver;
     private SimpleObjectProperty<File> lastKnownDirectoryProperty = new SimpleObjectProperty<>();
+    private Parser parser = new Parser(new Calculator());
 
     @FXML
     private TextArea outputArea;
@@ -149,114 +150,73 @@ public class Controller {
         fileLocationText.setText(file.getAbsolutePath());
     }
 
-    Queue<Command> commandQueue = new LinkedList<>();
-
     boolean isMathMLParsingAllowed = false;
 
     @FXML
-    private void parse() {
+    private void parse() throws IOException {
         isMathMLParsingAllowed = false;
-        StringBuilder output = new StringBuilder(); // collects lines to output to output area
-        Converter converter = new Converter();
-        Calculator calculator = new Calculator();
-        Command command;
 
-        commandQueue = new LinkedList<>();
-
+        String[] input = inputArea.getText().split("\n");
+        String[] output;
         try {
-            for (String line : inputArea.getText().split("\\n")) {
-
-                command = converter.getCommandType(line);
-                commandQueue.add(command);
-                if (command == COMMENT) {
-                    output.append(converter.parse(line, COMMENT) + "\n");
-                } else {
-
-                    line = line.replaceAll("\\s+","");
-
-                    if (command == SET) {
-                        output.append(converter.parse(line, SET) + "\n");
-
-                    } else if (command == CALCF) {
-                        String unsortedResult = converter.parse(line, CALCF);
-                        String[] convertResultAsArray = unsortedResult.split("\n");
-                        String precision = convertResultAsArray[0];
-                        String variableName = convertResultAsArray[1];
-                        String calculationWithVariableNames = convertResultAsArray[2];
-                        String calculationWithoutVariableNames = convertResultAsArray[3];
-                        String unit = convertResultAsArray[4];
-
-                        StringBuilder resultCollector = new StringBuilder();
-                        calculator.setDecimalPlace(Integer.parseInt(precision));
-
-                        String calculated = calculator.calculate(calculationWithoutVariableNames);
-
-                        resultCollector.append(variableName + '=' + calculationWithVariableNames
-                                + '=' + calculationWithoutVariableNames + '=' + calculated + ' ' + unit);
-
-                        // calculate arithmetic and save variable
-                        converter.parse(variableName + '=' + calculated + "," + unit, SET);
-
-                        output.append(resultCollector + "\n");
-                    } else {
-                        throw new IllegalArgumentException(line + "<<< Error: unknown command");
-                    }
-                }
-            }
-            outputArea.setText(output.toString());
-            outputArea.setScrollTop(Double.MAX_VALUE);
+            output = parser.parse(input);
             isMathMLParsingAllowed = true;
-        } catch (IllegalArgumentException e) {
-            output.append(e.getMessage() + "\n");
-            outputArea.setText(output.toString());
-            outputArea.setScrollTop(Double.MAX_VALUE);
-        } catch (FormulaParseException e) {
-            output.append("Trying to calculate with unknown variable, check this line!\n");
-            outputArea.setText(output.toString());
-            outputArea.setScrollTop(Double.MAX_VALUE);
-        } catch (Exception e) {
-            e.printStackTrace();
-            output.append(e.getMessage() + "\n");
-            outputArea.setText(output.toString());
-            outputArea.setScrollTop(Double.MAX_VALUE);
+        } catch (IllegalStateException e) {
+            output = new String[] {e.getMessage()};
         }
+        StringBuilder sb = new StringBuilder();
+        for (String line : output) {
+            sb.append(line + "\n");
+        }
+        outputArea.setText(sb.toString());
+        outputArea.setScrollTop(Double.MAX_VALUE);
     }
 
     @FXML
     public void formulasToMathMLToWord() {
-        Alert alert = new Alert(Alert.AlertType.WARNING);
+        if (outputArea.getText().equals("Word file created!")
+                || outputArea.getText().equals("Please parse again before trying to create a World file...")) {
+            outputArea.setText("Please parse again before trying to create a World file...");
+            return;
+        }
+
         if (!isMathMLParsingAllowed) {
             alert.setTitle("Warning Dialog");
-            alert.setContentText("Cannot parse your calculations to Word!" +
+            outputArea.setText("Cannot parse your calculations to Word!" +
                     "\nHave you fixed errors in your calculations?");
-            alert.showAndWait();
+            return;
         }
+        String textToConvertToWord = outputArea.getText();
+        isMathMLParsingAllowed = false;
+        outputArea.setText("Creating Word file...");
+        Queue<Command> commandQueue = parser.getCommandQueue();
         try {
-            String lines = outputArea.getText();
+            String lines = textToConvertToWord;
             if (lines == null || lines.length() < 1) return;
 
             final AsciiMathParser mathParser = new AsciiMathParser();
-            List<String> list = new ArrayList<>();
+            List<String> listOfMathML = new ArrayList<>();
 
             for (String line : lines.split("\\n")) {
                 if (commandQueue.poll() == COMMENT) {
-                    list.add(line);
+                    listOfMathML.add(line);
                 } else {
                     Document result = mathParser.parseAsciiMath(line);
-                    list.add(XmlUtilities.serializeMathmlDocument(result));
+                    listOfMathML.add(XmlUtilities.serializeMathmlDocument(result));
                 }
             }
 
             WordMathWriter wordMathWriter = new WordMathWriter();
-            for (String line : list) {
+            for (String line : listOfMathML) {
                 wordMathWriter.addLine(line);
             }
 
             wordMathWriter.write();
         } catch (Exception e) {
-            alert.setTitle("Oops... something went wrong!"
-            + "\n" + e.getMessage());
+            outputArea.setText("Oops... something went wrong!"
+                    + "\n" + e.getMessage());
         }
+        outputArea.setText("Word file created!");
     }
 
 }

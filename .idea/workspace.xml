@@ -1,31 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6014e2b-81fd-444c-b796-519bb7ef515c" name="Default Changelist" comment="refactor">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    <list default="true" id="a6014e2b-81fd-444c-b796-519bb7ef515c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joller/calculationparser/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joller/calculationparser/ParserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joller/calculationparser/converter/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joller/calculationparser/converter/CommandFinderException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joller/calculationparser/converter/ConverterException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joller/calculationparser/converter/ResultContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rõdu-tala.txt" beforeDir="false" afterPath="$PROJECT_DIR$/instructions/Rõdu-tala.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro.png" beforeDir="false" afterPath="$PROJECT_DIR$/instructions/intro.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-codec-1.10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-collections4-4.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/curvesapi-1.04.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/poi-3.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/poi-ooxml-3.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/poi-ooxml-schemas-3.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/stax-api-1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/xmlbeans-2.6.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output-example.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/instructions/output-example.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/joller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/joller/mathmltoword/WordMathWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joller/mathmltoword/WordMathWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/joller/calculationparser/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/joller/calculationparser/CommandFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joller/calculationparser/converter/CommandFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/joller/calculationparser/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joller/calculationparser/converter/Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/joller/calculationparser/VariableContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joller/calculationparser/converter/VariableContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/joller/calculator/CalculatorImplExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joller/calculator/CalculatorImplExcel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/CalculatorUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CalculatorUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appdata/templates/Posti kandevõime suure ekstsentrilisusega.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appdata/templates/Posti pikijõu ekstsentrilisuse leidmine.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appdata/templates/Surutud ristlõike kandevõime, kui σ1 on fyd ja σ2 ei ole fycd.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appdata/templates/Tala armatuuri dimensioneerimine.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appdata/templates/Tala kandevõime arvutamine.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/helpUI.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/helpUI.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/poi-generated-file.xlsx" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1220">
-              <caret line="258" column="9" selection-start-line="258" selection-start-column="9" selection-end-line="258" selection-end-column="9" />
+            <state relative-caret-position="220">
+              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,28 +41,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/calculator/CalculatorImplExcel.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/calculationparser/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-852">
-              <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/mathmltoword/WordMathWriter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="84" column="50" lean-forward="true" selection-start-line="84" selection-start-column="50" selection-end-line="84" selection-end-column="50" />
+            <state relative-caret-position="660">
+              <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1153#1154#0" expanded="true" />
-                <element signature="e#1195#1196#0" expanded="true" />
-                <element signature="e#4150#4151#0" expanded="true" />
-                <element signature="e#4178#4179#0" expanded="true" />
-                <element signature="e#4218#4219#0" expanded="true" />
-                <element signature="e#4253#4254#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,10 +77,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/joller/asciitomathml/AsciiMathParserOptions.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/joller/asciitomathml/XmlUtilities.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/joller/calculator/CalculatorImplExcel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/joller/mathmltoword/WordMathWriter.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/joller/calculator/CalculatorImplExcel.java" />
         <option value="$PROJECT_DIR$/src/main/resources/helpUI.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/joller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/joller/calculationparser/Parser.java" />
       </list>
     </option>
   </component>
@@ -131,7 +110,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="-1928" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -189,33 +168,23 @@
               <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="appdata" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalculatorUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalculatorUI" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="joller" type="462c0819:PsiDirectoryNode" />
+              <item name="calculationparser" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551798628405" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551883667198" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/SceneBuilder/SceneBuilder.exe" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -223,19 +192,19 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Files\Recent Backups\CalculatorUI" />
-      <recent name="D:\Files\Recent Backups\CalculatorUI\src\main\resources" />
-      <recent name="D:\Files\Recent Backups\CalculatorUI\src\main\java\com\joller\asciitomathml" />
-      <recent name="D:\Files\Recent Backups\CalculatorUI\src\main\java\com\joller" />
-      <recent name="D:\Files\Recent Backups\CalculatorUI\target\classes" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Files\Recent Backups\CalculatorUI\instructions" />
       <recent name="D:\Files\Recent Backups\CalculatorUI\src\main\resources" />
       <recent name="D:\Files\Recent Backups\CalculatorUI\target" />
       <recent name="D:\Files\Recent Backups\CalculatorUI\src\main\java" />
       <recent name="D:\Files\Recent Backups\CalculatorUI\src\main\java\com" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Files\Recent Backups\CalculatorUI\src\main\java\com\joller" />
+      <recent name="D:\Files\Recent Backups\CalculatorUI" />
+      <recent name="D:\Files\Recent Backups\CalculatorUI\src\main\resources" />
+      <recent name="D:\Files\Recent Backups\CalculatorUI\src\main\java\com\joller\asciitomathml" />
+      <recent name="D:\Files\Recent Backups\CalculatorUI\target\classes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -354,7 +323,10 @@
       <workItem from="1551771275838" duration="4282000" />
       <workItem from="1551778368415" duration="7802000" />
       <workItem from="1551793018202" duration="317000" />
-      <workItem from="1551795927168" duration="2536000" />
+      <workItem from="1551795927168" duration="4702000" />
+      <workItem from="1551820351231" duration="1398000" />
+      <workItem from="1551824828397" duration="1905000" />
+      <workItem from="1551880518800" duration="3351000" />
     </task>
     <task id="LOCAL-00001" summary="refactor">
       <created>1551774051583</created>
@@ -377,17 +349,24 @@
       <option name="project" value="LOCAL" />
       <updated>1551790317286</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="save">
+      <created>1551798704524</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1551798704524</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16125000" />
+    <option name="totallyTimeSpent" value="24945000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" x="-1338" y="213" width="504" height="619" id="Project" order="0" type="WINDOWED" weight="0.26865673" />
+      <window_info active="true" content_ui="combo" x="-1338" y="213" width="504" height="619" id="Project" order="0" type="WINDOWED" visible="true" weight="0.26865673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -404,7 +383,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3163597" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.31527627" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -465,6 +444,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactor&#10;change mathml library, refactor all parsers" />
+    <MESSAGE value="refactor" />
     <MESSAGE value="refactor" />
     <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
@@ -553,15 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/asciitomathml/AsciiMathParserException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="docComment;class#AsciiMathParserException#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/asciitomathml/XmlUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -579,24 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/CalculatorUI.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/asciitomathml/AsciiMathParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1082">
-          <caret line="47" column="67" selection-start-line="47" selection-start-column="67" selection-end-line="47" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/JUtil.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -610,40 +563,140 @@
     <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="340">
+            <caret line="17" selection-start-line="17" selection-end-line="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/asciitomathml/AsciiMathParserException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <folding>
+            <element signature="docComment;class#AsciiMathParserException#0" />
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1252#1253#0" expanded="true" />
+            <element signature="e#1314#1315#0" expanded="true" />
+            <element signature="e#1342#1343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/mathmltoword/WordMathWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="84" column="50" lean-forward="true" selection-start-line="84" selection-start-column="50" selection-end-line="84" selection-end-column="50" />
+        <state relative-caret-position="188">
+          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1153#1154#0" expanded="true" />
             <element signature="e#1195#1196#0" expanded="true" />
-            <element signature="e#4150#4151#0" expanded="true" />
-            <element signature="e#4178#4179#0" expanded="true" />
-            <element signature="e#4218#4219#0" expanded="true" />
-            <element signature="e#4253#4254#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/calculationparser/converter/Converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/calculationparser/converter/ResultContainer.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/calculationparser/converter/VariableContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/calculationparser/converter/CommandFinder.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/calculationparser/ParserException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/calculationparser/converter/CommandFinderException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/calculator/CalculatorImplExcel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-852">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        <state relative-caret-position="360">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/CalculatorUI.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/calculationparser/converter/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/calculationparser/converter/ConverterException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/asciitomathml/AsciiMathParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-583">
+          <caret line="99" column="20" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/helpUI.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="280">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1220">
-          <caret line="258" column="9" selection-start-line="258" selection-start-column="9" selection-end-line="258" selection-end-column="9" />
+        <state relative-caret-position="220">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/calculationparser/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

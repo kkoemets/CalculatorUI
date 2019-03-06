@@ -1,17 +1,24 @@
-Commands
+COMMANDS
 ---------------------
-Write a calculation and calculate. It allows you to used set variables instead of numbers.
-Results is saved with corresponding variable name
-    calcf(n): 'variable_name'='equation', 'unit'
-          - n is decimal precision
----
-Add a variable to variable base
-    set: 'variable_name'= 'variable_value', 'unit'
----
-Output a text line.
-    c: 'text'
----------------------
+'calcf(n):'
+            - Write an equation and calculate it.
+            It allows you to used set variables
+            instead of numbers.
+            n is decimal precision. Result
+            is saved with corresponding variable name.
 
+calcf(n): 'variable_name'='equation', 'unit'
+-----
+'set:'
+            - Add a variable to variable base
+
+set: 'variable_name'= 'variable_value', 'unit'
+-----
+'c:'
+            - Output a text line.
+
+c: 'text'
+---------------------
 
 EXAMPLE
 ---------------------
