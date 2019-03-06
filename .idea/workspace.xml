@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a6014e2b-81fd-444c-b796-519bb7ef515c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/joller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorUI.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CalculatorUI.jar" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +21,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/Controller.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="143" column="77" selection-start-line="143" selection-start-column="77" selection-end-line="143" selection-end-column="77" />
+                <state relative-caret-position="400">
+                  <caret line="148" column="9" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -184,7 +185,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551897451022" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551897567708" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/SceneBuilder/SceneBuilder.exe" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -194,10 +195,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Files\Recent Backups\CalculatorUI" />
+      <recent name="D:\Files\Recent Backups\CalculatorUI\src" />
       <recent name="D:\Files\Recent Backups\CalculatorUI\src\main\java\com\joller" />
       <recent name="D:\Files\Recent Backups\CalculatorUI\src\main\resources" />
       <recent name="D:\Files\Recent Backups\CalculatorUI\src\main\java\com\joller\asciitomathml" />
-      <recent name="D:\Files\Recent Backups\CalculatorUI\target\classes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Files\Recent Backups\CalculatorUI" />
@@ -327,7 +328,7 @@
       <workItem from="1551820351231" duration="1398000" />
       <workItem from="1551824828397" duration="1905000" />
       <workItem from="1551880518800" duration="4583000" />
-      <workItem from="1551894450100" duration="2597000" />
+      <workItem from="1551894450100" duration="2853000" />
     </task>
     <task id="LOCAL-00001" summary="refactor">
       <created>1551774051583</created>
@@ -378,17 +379,24 @@
       <option name="project" value="LOCAL" />
       <updated>1551894783797</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix bug when loading/saving files">
+      <created>1551897551228</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1551897551228</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28774000" />
+    <option name="totallyTimeSpent" value="29030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" x="-1338" y="213" width="504" height="619" id="Project" order="0" type="WINDOWED" visible="true" weight="0.26865673" />
+      <window_info content_ui="combo" x="-1338" y="213" width="504" height="619" id="Project" order="0" type="WINDOWED" visible="true" weight="0.26865673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -398,7 +406,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33261105" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33261105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -470,7 +478,8 @@
     <MESSAGE value="save" />
     <MESSAGE value="refactor" />
     <MESSAGE value="fix typos" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix typos" />
+    <MESSAGE value="fix bug when loading/saving files" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug when loading/saving files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -689,8 +698,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/joller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="143" column="77" selection-start-line="143" selection-start-column="77" selection-end-line="143" selection-end-column="77" />
+        <state relative-caret-position="400">
+          <caret line="148" column="9" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
