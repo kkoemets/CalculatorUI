@@ -2,7 +2,7 @@ COMMANDS
 ---------------------
 'calcf(n):'
             - Write an equation and calculate it.
-            It allows you to used set variables
+            It allows you to use set variables
             instead of numbers.
             n is decimal precision. Result
             is saved with corresponding variable name.

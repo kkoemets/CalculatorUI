@@ -175,8 +175,8 @@ public class Controller {
     @FXML
     public void formulasToMathMLToWord() {
         if (outputArea.getText().equals("Word file created!")
-                || outputArea.getText().equals("Please parse again before trying to create a World file...")) {
-            outputArea.setText("Please parse again before trying to create a World file...");
+                || outputArea.getText().equals("Please parse again before trying to create a Word file...")) {
+            outputArea.setText("Please parse again before trying to create a Word file...");
             return;
         }
 
