@@ -8,8 +8,7 @@ If you have no interest in building the application then you can [download it](h
 
 
 ### Explanation 
-This application was meant to replace Excel while solving my diploma work. <br>
- I hated hidden formulas (also unreadable) in Excel when doing calculations and then typing them into a Word file afterwards. This helped me to solve both, however a lot of shortcuts were used to make it work.
+This application was meant to replace Excel while solving my diploma work.<br>I hated hidden formulas (also unreadable) in Excel when doing calculations and then typing them into a Word file afterwards.
 
 Picture of application:
 ![alt text](https://raw.githubusercontent.com/Jollerr/CalculatorUI/master/instructions/intro.png)
