@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 
-import com.joller.asciitomathml.AsciiMathParser;
+import uk.ac.ed.ph.asciimath.parser.AsciiMathParser;
 import com.joller.asciitomathml.XmlUtilities;
 import com.joller.calculationparser.Parser;
 
@@ -217,8 +217,10 @@ public class Controller {
 
             wordMathWriter.write();
         } catch (Exception e) {
+            e.printStackTrace();
             outputArea.setText("Oops... something went wrong!"
                     + "\n" + e.getMessage());
+            return;
         }
         outputArea.setText("Word file created!");
     }

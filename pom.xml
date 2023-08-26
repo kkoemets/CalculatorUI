@@ -118,5 +118,21 @@
             <artifactId>javafx-base</artifactId>
             <version>17.0.0.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/uk.ac.ed.ph.asciimath/asciimath-parser -->
+        <dependency>
+            <groupId>uk.ac.ed.ph.asciimath</groupId>
+            <artifactId>asciimath-parser</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mozilla</groupId>
+            <artifactId>rhino</artifactId>
+            <version>1.7.13</version>
+        </dependency>
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
+            <version>2.12.1</version>
+        </dependency>
     </dependencies>
 </project>

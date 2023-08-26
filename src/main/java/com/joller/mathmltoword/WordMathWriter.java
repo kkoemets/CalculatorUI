@@ -13,7 +13,12 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
-import java.io.*;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.StringReader;
+import java.io.StringWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedList;
@@ -76,8 +81,13 @@ public class WordMathWriter {
      * @throws Exception
      */
     private CTOMath getOMML(String mathML) throws Exception {
+        System.setProperty("jdk.xml.xpathExprGrpLimit", "0");
+        System.setProperty("jdk.xml.xpathExprOpLimit", "0");
+        System.setProperty("jdk.xml.xpathTotalOpLimit", "0");
 
         TransformerFactory tFactory = TransformerFactory.newInstance();
+        tFactory.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, false);
+
         StreamSource stylesource = new StreamSource(getFile(DIRECTORY_XSL_FILE));
 
         Transformer transformer = tFactory.newTransformer(stylesource);

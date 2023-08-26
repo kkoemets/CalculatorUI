@@ -20,6 +20,7 @@
 package com.joller.asciitomathml;
 
 import org.w3c.dom.Document;
+import uk.ac.ed.ph.asciimath.parser.AsciiMathParserException;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;

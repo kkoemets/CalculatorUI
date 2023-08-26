@@ -5,6 +5,8 @@ Before building the project make sure you Maven and [JDK 17 Full](https://bell-s
 To build the project type `mvn package` in command prompt where `pom.xml` is located.
 
 If you have no interest in building the application then you can [download it](https://github.com/Jollerr/CalculatorUI/raw/master/CalculatorUI-1.0.jar). You must have the Java Runtime Environment version 17 or above.
+If word files are not created then you must in run as an administrator from the command prompt with the
+command `java -jar CalculatorUI-1.0.jar`
 
 
 ### Explanation 
